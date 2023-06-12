@@ -18,10 +18,10 @@ export default function Navbar() {
         <li className="nav-item">
           <a className="nav-link" href="./">Market</a>
         </li>
-       
         <li className="nav-item">
-          <a className="nav-link disabled" href="#" tabIndex="-1" aria-disabled="true">Disabled</a>
+          <a className="nav-link" href="./">Choose Us</a>
         </li>
+        
       </ul>
       <form className="d-flex">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
