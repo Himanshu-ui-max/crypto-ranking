@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import Market from './components/Market';
-import Homepage from './components/Homepage';
+
+import Home from './components/Home';
 
 function App() {
   return (
