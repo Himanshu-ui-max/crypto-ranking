@@ -29,30 +29,30 @@ function Home() {
         <hr />
       <div className='d-flex justify-content-evenly' style={{height : '100vh', width:'100vw'}}>
 
-      <div style={{width : '500px'}}>
+      <div style={{width : '500px', textAlign:'left'}}>
 
       {parseData.map((element)=>{
           
-          return <Crypname name={element.name} imgUrl={element.image} />
+          return <Crypname key={element.id} name={element.name} imgUrl={element.image} />
         })}
         </div>
       <div style={{width : '500px'}}>
       {parseData.map((element)=>{
           
-          return <Cryprice price={element.current_price}  />
+          return <Cryprice key={element.id} price={element.current_price}  />
         })}
       </div>
       <div style={{width : '500px'}}>
       {parseData.map((element)=>{
           
-          return <Crypchange change={element.price_change_percentage_24h}  />
+          return <Crypchange key={element.id} change={element.price_change_percentage_24h}  />
         })}
       </div>
       <div style={{width : '500px'}}>
 
       {parseData.map((element)=>{
           
-          return <Marketcap Marketcap={element.market_cap}  />
+          return <Marketcap key={element.id} Marketcap={element.market_cap}  />
         })}
         </div>
     </div>
