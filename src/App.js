@@ -7,8 +7,7 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <Homepage/>
-      <Market/>
+      <Home/>
 
     </div>
   );
