@@ -6,10 +6,10 @@ export default function Market() {
       <table className="table">
   <thead className="thead-dark">
     <tr>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-      <th className="col">growth</th>
+      <th scope="col">Coin</th>
+      <th scope="col">Price</th>
+      <th scope="col">1H Change</th>
+      <th className="col">Market Cap</th>
     </tr>
   </thead>
   <tbody>
@@ -20,20 +20,8 @@ export default function Market() {
       <td>@mdo</td>
       <td>1.2%</td>
     </tr>
-    <tr>
-      
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-      <td>2.4%</td>
-    </tr>
-    <tr>
-      
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-      <td>3.4%</td>
-    </tr>
+   
+    
   </tbody>
 </table>
 
