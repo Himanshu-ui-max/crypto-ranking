@@ -26,6 +26,7 @@ function Home() {
     <div>
       <Homepage/>
       <TableHeading/>
+        <hr />
       <div className='d-flex justify-content-evenly'>
 
       <div style={{width : '500px'}}>
@@ -51,7 +52,7 @@ function Home() {
 
       {parseData.map((element)=>{
           
-          return <Marketcap Marketcap={element.market_cap_change_24h}  />
+          return <Marketcap Marketcap={element.market_cap}  />
         })}
         </div>
     </div>
