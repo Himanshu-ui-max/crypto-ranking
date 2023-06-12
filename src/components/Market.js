@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Market() {
+export default function Market(props) {
   return (
     <div>
       <table className="table">
@@ -15,10 +15,11 @@ export default function Market() {
   <tbody>
     <tr>
       
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-      <td>1.2%</td>
+      <td>{props.name}</td>
+      <td>{props.price}</td>
+      <td>{props.change}%</td>
+      <td>{props.marketcap}</td>
+      
     </tr>
    
     
