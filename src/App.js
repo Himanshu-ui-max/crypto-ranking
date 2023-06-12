@@ -2,12 +2,23 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
 import Market from './components/Market';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
+      <Router>
       <Navbar/>
-      <Market/>
+        <Routes>
+          <Route element={<Market/>} exact path='./'></Route>
+        </Routes>
+      </Router>
+      
+      
     </div>
   );
 }
