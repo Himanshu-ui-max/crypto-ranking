@@ -9,29 +9,25 @@ import Marketcap from './Marketcap';
 
 
 function Home() {
-  const [page, setpage] = useState(1);
   const [parseData, setparseData] = useState([]);
   const first=()=>{
-    setpage(1);
-    cryptodata();
+    cryptodata(1);
   }
   const second=()=>{
-    setpage(2);
-    cryptodata();
+    
+    cryptodata(2);
   }
   const third=()=>{
-    setpage(3);
-    cryptodata();
+    cryptodata(3);
   }
   const fourth=()=>{
-    setpage(4);
-    cryptodata();
+    
+    cryptodata(4);
   }
   const fifth=()=>{
-    setpage(5);
-    cryptodata();
+    cryptodata(5);
   }
-  const cryptodata=async ()=>{
+  const cryptodata=async (page)=>{
     let url=`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=8&page=${page}&sparkline=false&price_change_percentage=1h&locale=en&precision=2`
    let data=await fetch(url);
    let parsedata=await data.json();
@@ -40,7 +36,7 @@ function Home() {
   }
 
   useEffect( () => {
-   cryptodata();
+   cryptodata(1);
    // eslint-disable-next-line
   }, []);
   
