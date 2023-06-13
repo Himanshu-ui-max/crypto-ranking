@@ -27,7 +27,7 @@ export default function Homepage() {
               return <Topcryp key={element.id} name={element.name} imgURL={element.image} change={element.price_change_percentage_24h} price={element.current_price}/>
             }
             else{
-              return 
+              return null;
             }
           })}
           </div>

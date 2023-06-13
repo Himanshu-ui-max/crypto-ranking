@@ -12,19 +12,24 @@ function Home() {
   const [page, setpage] = useState(1);
   const [parseData, setparseData] = useState([]);
   const first=()=>{
-    setpage(1)
+    setpage(1);
+    cryptodata();
   }
   const second=()=>{
-    setpage(2)
+    setpage(2);
+    cryptodata();
   }
   const third=()=>{
-    setpage(3)
+    setpage(3);
+    cryptodata();
   }
   const fourth=()=>{
-    setpage(4)
+    setpage(4);
+    cryptodata();
   }
   const fifth=()=>{
-    setpage(5)
+    setpage(5);
+    cryptodata();
   }
   const cryptodata=async ()=>{
     let url=`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=8&page=${page}&sparkline=false&price_change_percentage=1h&locale=en&precision=2`
@@ -36,6 +41,7 @@ function Home() {
 
   useEffect( () => {
    cryptodata();
+   // eslint-disable-next-line
   }, []);
   
   return (
