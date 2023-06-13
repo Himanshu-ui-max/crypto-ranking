@@ -24,9 +24,9 @@ function Home() {
     
     cryptodata(4);
   }
-  const fifth=()=>{
-    cryptodata(5);
-  }
+  // const fifth=()=>{
+  //   cryptodata(5);
+  // }
   const cryptodata=async (page)=>{
     let url=`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=8&page=${page}&sparkline=false&price_change_percentage=1h&locale=en&precision=2`
    let data=await fetch(url);
@@ -82,7 +82,7 @@ function Home() {
       <button className="round" onClick={second}>2</button>
       <button className="round" onClick={third}>3</button>
       <button className="round" onClick={fourth}>4</button>
-      <button className="round" onClick={fifth}>5</button>
+      {/* <button className="round" onClick={fifth}>5</button> */}
     </div>
       </div>
         </div>
