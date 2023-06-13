@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+button.round {
+  background-color: #48abe0;
+  color: white;
+  border: none;
+  padding: 5px;
+  font-size: 2rem;
+  height: 5rem;
+  width: 5rem;
+  box-shadow: 0 2px 4px darkslategray;
+  border-radius: 50%;
+  cursor: pointer;
+ transition: all 0.2s ease;
+}
+button.round:hover {
+  background-color: #65b9e6;
+ }
+ 
+ button.round:active {
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(2px);
+ }
