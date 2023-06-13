@@ -25,6 +25,7 @@ function Home() {
   return (
     <div>
       <Homepage/>
+      <hr />
       <TableHeading/>
         <hr />
       <div className='d-flex justify-content-evenly' style={{height : '100vh', width:'100vw'}}>
