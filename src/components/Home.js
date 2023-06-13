@@ -28,7 +28,7 @@ function Home() {
       <hr />
       <TableHeading/>
         <hr />
-      <div className='d-flex justify-content-evenly' style={{height : '100vh', width:'100vw'}}>
+      <div className='d-flex justify-content-evenly' style={{height : '83vh', width:'100vw'}}>
 
       <div style={{width : '500px', textAlign:'left'}}>
 
