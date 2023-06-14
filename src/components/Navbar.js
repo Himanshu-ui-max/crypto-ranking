@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { HashLink } from 'react-router-hash-link'
 
 
 
@@ -15,7 +15,7 @@ export default function Navbar() {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#homepage">Home</a>
+          <HashLink className="nav-link active" aria-current="page" to="/#homepage">Home</HashLink>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#table">Market</a>

@@ -14,9 +14,10 @@ function App() {
     <div className="App">
       <Router>
       <Navbar/>
+      {/* <Home/> */}
       <Routes>
-        <Route element={<Home/>} exact path='./'></Route>
-        <Route element={<CrypDetail/> }></Route>
+        <Route exact path='/' element={<Home/>} ></Route>
+        <Route element={<CrypDetail/> } exact path='/crypdetails'></Route>
       </Routes>
       </Router>
       
