@@ -1,9 +1,5 @@
 import React from 'react'
 import TableHeading from './TableHeading'
-import Crypname from './Crypname';
-import Cryprice from './Cryprice';
-import Crypchange from './Crypchange';
-import Marketcap from './Marketcap';
 import { useState, useEffect } from 'react';
 import Tabledata from './Tabledata';
 
