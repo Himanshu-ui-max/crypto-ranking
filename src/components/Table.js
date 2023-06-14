@@ -5,6 +5,7 @@ import Cryprice from './Cryprice';
 import Crypchange from './Crypchange';
 import Marketcap from './Marketcap';
 import { useState, useEffect } from 'react';
+import Tabledata from './Tabledata';
 
 
 export default function Table() {
@@ -39,7 +40,7 @@ export default function Table() {
     // eslint-disable-next-line
   }, []);
     return (
-        <section id='table'style={{paddingTop : '75px', height:'100vh'}}>
+        <section id='table'style={{paddingTop : '75px', height:'150vh'}}>
 
         <div>
             <div >
@@ -48,7 +49,7 @@ export default function Table() {
                 <hr />
                 <div >
 
-                    <div className='d-flex justify-content-evenly' style={{  width: '100vw' }}>
+                    {/* <div className='d-flex justify-content-evenly' style={{  width: '100vw' }}>
 
                         <div style={{ width: '500px', textAlign: 'left' }}>
 
@@ -76,7 +77,11 @@ export default function Table() {
                                 return <Marketcap key={element.id} Marketcap={element.market_cap} />
                             })}
                         </div>
-                    </div>
+                    </div> */}
+                    {parseData.map((element)=>{
+                        return <Tabledata name={element.name} price={element.current_price} change={element.price_change_percentage_24h} marketcap={element.market_cap} />
+                    })}
+                    
                     <div className="container d-flex justify-content-around" style={{marginTop : '50px', marginBottom :'200px'}} >
                         <button className="round" onClick={first}>1</button>
                         <button className="round" onClick={second}>2</button>
