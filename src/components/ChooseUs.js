@@ -7,7 +7,7 @@ function ChooseUs() {
 
     <div>
       <div className="container my-3">
-        <h1 style={{fontSize: '7rem', marginBottom:'100px'}}>WHY CHOOSE US</h1>
+        <h1 style={{fontSize: '7rem', marginBottom:'70px'}}>WHY CHOOSE US</h1>
         <div className='d-flex justify-content-evenly'>
             <div>
 
@@ -31,7 +31,10 @@ function ChooseUs() {
         </div>
         </div>
         </div>
-        <img src={illus} alt="" style={{width: '550px', height: '550px'}} />
+        <div className='object'>
+
+        <img src={illus} alt="" style={{width: '550px', height: '550px',}} />
+        </div>
         <div>
 
             

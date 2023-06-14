@@ -84,3 +84,18 @@ button.round:hover {
   50% { border-color: rgb(255, 255, 255); }
   100% { border-color: rgb(236, 236, 242); }
 }
+.object {
+  animation: MoveUpDown 1.5s linear infinite;
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 100px;
+  }
+}
