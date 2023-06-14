@@ -77,7 +77,7 @@ export default function Table() {
                             })}
                         </div>
                     </div>
-                    <div className="container d-flex justify-content-around my-3" >
+                    <div className="container d-flex justify-content-around" style={{marginTop : '50px', marginBottom :'200px'}} >
                         <button className="round" onClick={first}>1</button>
                         <button className="round" onClick={second}>2</button>
                         <button className="round" onClick={third}>3</button>
