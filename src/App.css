@@ -99,3 +99,13 @@ button.round:hover {
     bottom: 100px;
   }
 }
+
+tr:hover{
+  background-color: #c5c7cc;
+}
+hr{
+  margin: 0px;
+}
+tr{
+  margin : 0px
+}
