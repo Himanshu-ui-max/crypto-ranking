@@ -18,10 +18,10 @@ export default function Navbar() {
           <HashLink className="nav-link active" aria-current="page" to="/#homepage">Home</HashLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#table">Market</a>
+          <HashLink className="nav-link" to="/#table">Market</HashLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#choose us">Choose Us</a>
+          <HashLink className="nav-link" to="/#choose us">Choose Us</HashLink>
         </li>
         
       </ul>
