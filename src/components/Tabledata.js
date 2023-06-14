@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
-import CrypDetail from './CrypDetail';
+
 import {
   Routes,
   Route,
@@ -39,10 +39,7 @@ export default function Tabledata(props) {
 </table>
     </div>
     
-      <Routes>
-        <Route exact path='/crypdetails' element={<CrypDetail name={name} imageURL={imageURL}/>}></Route>
-      </Routes>
-    
+     
     </>
   )
 }

@@ -1,11 +1,10 @@
 import React from 'react'
 
-function CrypDetail(props) {
+export default function CrypDetail() {
   return (
-    <div>
-      <img src={props.imageURL} alt="" />{props.name}
+    <div className='container'>
+      <h1>djkewbfewv</h1>
     </div>
   )
 }
 
-export default CrypDetail
