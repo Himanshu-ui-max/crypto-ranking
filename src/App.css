@@ -109,3 +109,6 @@ hr{
 tr{
   margin : 0px
 }
+.table-borderless{
+  margin-bottom: 0px;
+}
