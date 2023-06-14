@@ -13,12 +13,12 @@ function Home() {
 
   return (
     <div>
-      {/* <Router> */}
+      
         <Homepage/>
         <Table/>
         <ChooseUs/>
         <Footer/>
-      {/* </Router> */}
+      
       
       {/* <hr /> */}
       
