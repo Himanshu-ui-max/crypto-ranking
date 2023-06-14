@@ -31,6 +31,7 @@ export default function Tabledata(props) {
       <td className='tabledata' style={{width : '300px',textAlign :'left' }}>${props.price.toFixed(2)}</td>
       <td className='tabledata' style={{width : '300px', color:`${color}`,textAlign :'left'}}>{change}%</td>
       <td className='tabledata' style={{width : '300px',textAlign :'left'}}>${props.marketcap}</td>
+      
     </tr>
     </Link>
     <hr />
