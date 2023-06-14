@@ -75,7 +75,7 @@ export default function Table() {
                         </div>
                     </div> */}
                     {parseData.map((element)=>{
-                        return <Tabledata name={element.name} price={element.current_price} change={element.price_change_percentage_24h} marketcap={element.market_cap} />
+                        return <Tabledata imageURL={element.image} name={element.name} price={element.current_price} change={element.price_change_percentage_24h} marketcap={element.market_cap} />
                     })}
                     
                     <div className="container d-flex justify-content-around" style={{marginTop : '50px', marginBottom :'200px'}} >

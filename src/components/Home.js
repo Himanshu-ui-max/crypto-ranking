@@ -2,12 +2,12 @@ import React from 'react'
 import Homepage from './Homepage'
 import {
   BrowserRouter as Router,
-  Routes,
-  Route,
+  
 } from "react-router-dom";
 
 import Table from './Table';
 import ChooseUs from './ChooseUs';
+import Footer from './Footer';
 
 
 
@@ -20,6 +20,7 @@ function Home() {
         <Homepage/>
         <Table/>
         <ChooseUs/>
+        <Footer/>
       </Router>
       
       {/* <hr /> */}

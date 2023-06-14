@@ -1,14 +1,27 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import Footer from './components/Footer';
+
+import CrypDetail from './components/CrypDetail'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
+      <Router>
       <Navbar/>
-      <Home/>
-      <Footer/>
+      <Routes>
+        <Route element={<Home/>} exact path='./'></Route>
+        <Route element={<CrypDetail/> }></Route>
+      </Routes>
+      </Router>
+      
+      
+      
     </div>
   );
 }
