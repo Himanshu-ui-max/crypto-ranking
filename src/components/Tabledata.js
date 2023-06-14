@@ -1,7 +1,14 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
+import CrypDetail from './CrypDetail';
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
 
 export default function Tabledata(props) {
+  let name = props.name;
+  let imageURL=props.imageURL
   let change =''
   let color ='green'
   if(props.change>0){
@@ -13,6 +20,7 @@ export default function Tabledata(props) {
     change=props.change.toFixed(2);
   }
   return (
+    <>
     <div>
       
       <table className="table table-borderless">
@@ -29,5 +37,11 @@ export default function Tabledata(props) {
   </tbody>
 </table>
     </div>
+    
+      <Routes>
+        <Route exact path='/crypdetails' element={<CrypDetail name={name} imageURL={imageURL}/>}></Route>
+      </Routes>
+    
+    </>
   )
 }

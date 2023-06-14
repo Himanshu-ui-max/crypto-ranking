@@ -1,9 +1,9 @@
 import React from 'react'
 
-function CrypDetail() {
+function CrypDetail(props) {
   return (
     <div>
-      
+      <img src={props.imageURL} alt="" />{props.name}
     </div>
   )
 }
