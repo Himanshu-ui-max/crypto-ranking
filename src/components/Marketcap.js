@@ -5,7 +5,7 @@ export default function Marketcap(props) {
     
   return (
     
-    <div style={{fontSize : '2rem'}}>
+    <div style={{fontSize : '1.75rem'}}>
     ${props.Marketcap.toLocaleString()}
     </div>
   )

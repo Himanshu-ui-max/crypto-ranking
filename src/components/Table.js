@@ -39,16 +39,16 @@ export default function Table() {
     // eslint-disable-next-line
   }, []);
     return (
-        <section id='table'style={{paddingTop : '100px'}}>
+        <section id='table'style={{paddingTop : '75px'}}>
 
         <div>
             <div >
 
                 <TableHeading />
                 <hr />
-                <div style={{ height: '100vh' }}>
+                <div >
 
-                    <div className='d-flex justify-content-evenly' style={{ height: '60vh', width: '100vw' }}>
+                    <div className='d-flex justify-content-evenly' style={{  width: '100vw' }}>
 
                         <div style={{ width: '500px', textAlign: 'left' }}>
 
@@ -57,19 +57,19 @@ export default function Table() {
                                 return <Crypname key={element.id} name={element.name} imgUrl={element.image} />
                             })}
                         </div>
-                        <div style={{ width: '500px' }}>
+                        <div style={{ width: '350px', textAlign: 'left'  }}>
                             {parseData.map((element) => {
 
                                 return <Cryprice key={element.id} price={element.current_price} />
                             })}
                         </div>
-                        <div style={{ width: '500px' }}>
+                        <div style={{ width: '350px', textAlign: 'left'  }}>
                             {parseData.map((element) => {
 
                                 return <Crypchange key={element.id} change={element.price_change_percentage_24h} />
                             })}
                         </div>
-                        <div style={{ width: '500px' }}>
+                        <div style={{ width: '350px', textAlign: 'left'  }}>
 
                             {parseData.map((element) => {
 
@@ -77,7 +77,7 @@ export default function Table() {
                             })}
                         </div>
                     </div>
-                    <div className="container d-flex justify-content-around" >
+                    <div className="container d-flex justify-content-around my-3" >
                         <button className="round" onClick={first}>1</button>
                         <button className="round" onClick={second}>2</button>
                         <button className="round" onClick={third}>3</button>

@@ -19,7 +19,7 @@ export default function Homepage() {
     <section id='homepage' style={{paddingTop: '100px'}}>
 
     <div >
-      <div className="container my-3" style={{height : '100vh' , width : '100vw'}}>
+      <div className="container my-3" style={{  width : '100vw'}}>
         <h1 style={{fontSize : '10rem'}}>Welcome to Crypto-Ranking !</h1> 
         <div className='container'>
           <div className="container d-flex justify-content-around" style={{marginTop:'80px'}}>
