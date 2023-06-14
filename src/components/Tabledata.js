@@ -25,7 +25,7 @@ export default function Tabledata(props) {
       
       <table className="table table-borderless">
   <tbody>
-    <Link to='/crypdetails'>
+    <Link to='/crypdetails'  style={{textDecoration:"none", color:"black"}}>
     <tr className='d-flex justify-content-evenly' style={{fontSize:'1.6rem'}}>
       <th className='tabledata' scope="row" style={{width : '300px', textAlign : 'left'}}><img src={props.imageURL} alt="" style={{height : '40px', width : '40px'}} /> {props.name}</th>
       <td className='tabledata' style={{width : '300px',textAlign :'left' }}>${props.price.toFixed(2)}</td>
