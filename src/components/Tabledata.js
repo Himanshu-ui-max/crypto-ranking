@@ -1,14 +1,10 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 
-import {
-  Routes,
-  Route,
-} from "react-router-dom";
+
 
 export default function Tabledata(props) {
-  let name = props.name;
-  let imageURL=props.imageURL
+  
   let change =''
   let color ='green'
   if(props.change>0){

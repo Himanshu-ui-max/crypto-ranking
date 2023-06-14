@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function CrypDetail() {
+export default function CrypDetail(props) {
   return (
-    <div className='container'>
-      <h1>djkewbfewv</h1>
+    <div className='container' style={{marginTop:"300px"}}>
+      {props.name}
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+
 import { HashLink } from 'react-router-hash-link'
 
 
@@ -23,9 +23,6 @@ export default function Navbar() {
         </li>
         <li className="nav-item">
           <HashLink className="nav-link" to="/#choose us">Choose Us</HashLink>
-        </li>
-        <li className="nav-item">
-        <Link to="/crypdetails"> crypdetails</Link>
         </li>
       </ul>
       <form className="d-flex">
