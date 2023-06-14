@@ -16,7 +16,7 @@ export default function Homepage() {
    cryptodata();
   }, []);
   return (
-    <section id='homepage' style={{paddingTop: '100px'}}>
+    <section id='homepage' style={{paddingTop: '100px', height : '100vh'}}>
 
     <div >
       <div className="container my-3" style={{ width : '100vw'}}>
