@@ -17,7 +17,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route exact path='/' element={<Home/>} ></Route>
-        <Route exact path='/crypdetails' element={<CrypDetail key="cryp" />}></Route>
+        <Route exact path='/coin/:coinId' element={<CrypDetail key="cryp" />}></Route>
       </Routes>
       </Router>
       
