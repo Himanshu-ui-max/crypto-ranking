@@ -20,8 +20,8 @@ export default function Homepage() {
 
     <div >
       <div className="container my-3" style={{ width : '100vw'}}>
-      <div className="typewriter text-centre container" style={{width:'1200px', height : '100px '}}>
-        <h1 className="up" style={{fontSize : '5rem', height : '100px'}}>Welcome to Crypto-Ranking!</h1>
+      <div className="typewriter tex-center container" style={{width:'2000px', height : '100px '}}>
+        <h1  style={{ fontSize:"6rem", height:'150px', width:'1350px'}}>Welcome to Crypto-Ranking!</h1>
         </div> 
         <div className='container'>
           <div className="container d-flex justify-content-around" style={{marginTop:'80px'}}>
