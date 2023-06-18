@@ -25,22 +25,38 @@ ChartJS.register(
   Filler,
   Legend
 );
-    const HistoryChart = () => {
+export default function HistoryChart  () {
         const {coinId} = useParams ();
         const [chart, setChart] = useState({});
+        const [days, setDays] = useState('1');
+        const handle1D=()=>{
+          setDays('1');
+          setFormat('MMMM Do , h:mm:ss a')
+        }
+        const handle1W=()=>{
+          setDays('7');
+          setFormat('MMMM Do')
+        }
+        const handle1M=()=>{
+          setDays('30');
+          setFormat('MMMM Do')
+        }
+        const handle1Y=()=>{
+          setDays('365');
+          setFormat('MMMM YYYY')
+        }
+        const [format, setFormat] = useState('MMMM Do , h:mm:ss a');
         const chartData = async () => {
-            let url = `https://api.coingecko.com/api/v3/coins/${coinId}/market_chart?vs_currency=usd&days=7`;
+            let url = `https://api.coingecko.com/api/v3/coins/${coinId}/market_chart?vs_currency=usd&days=${days}`;
             let data = await fetch(url);
             let parsedata = await data.json();
             setChart(parsedata);
             console.log(parsedata);
           }
-          console.log(chart);
           useEffect(() => {
             chartData();
             // eslint-disable-next-line
           }, []);
-
         const coinChartData = chart.prices?.map(value => ({ x: value[0],
           y: value[1].toFixed(2)}));
           console.log(coinChartData);
@@ -48,7 +64,7 @@ ChartJS.register(
             responsive: true
             }
             const data = {
-              labels: coinChartData?.map(value => moment(value.x).format('MMM DD')),
+              labels: coinChartData?.map(value => moment(value.x).format(format)),
             datasets: [
             {
                 fill:true,
@@ -59,19 +75,15 @@ ChartJS.register(
             }
         ]
             }
+            
   return (
     <>
-         <div className="buttons">
-          <input type="checkbox" className="btn-check mx-2" id="btn-check-outlined" autocomplete="off"/>
-          <label className="btn btn-outline-primary" for="btn-check-outlined">1 D</label>
-          <input type="checkbox" className="btn-check mx-2" id="btn-check-2-outlined" checked autocomplete="off"/>
-          <label className="btn btn-outline-secondary" for="btn-check-2-outlined">1 W</label>
-          <input type="radio" className="btn-check mx-2" name="options-outlined" id="success-outlined" autocomplete="off" checked/>
-          <label className="btn btn-outline-success" for="success-outlined">1 M</label>
-
-          <input type="radio" className="btn-check mx-2" name="options-outlined" id="danger-outlined" autocomplete="off"/>
-          <label className="btn btn-outline-danger" for="danger-outlined">1 Y</label>
-          </div>
+            <div className="btn-group" role="group" aria-label="Default button group">
+            <button type="button" className="btn btn-outline-primary" onClick={handle1D}>1 D</button>
+            <button type="button" className="btn btn-outline-primary" onClick={handle1W}>1 W</button>
+            <button type="button" className="btn btn-outline-primary" onClick={handle1M}>1 M</button>
+            <button type="button" className="btn btn-outline-primary" onClick={handle1Y}>1 Y</button>
+            </div>
     <div>
       <Line options={options} data={data} />
     </div>
@@ -79,4 +91,4 @@ ChartJS.register(
   )
 }
 
-export default HistoryChart
+

@@ -28,7 +28,7 @@ export default function CrypDetail() {
       {coin.image ? <img src={coin.image.large} alt={coin.id} /> : null}
       <h2 style={{textTransform:"uppercase"}}><strong>{coin.name}({coin.symbol})</strong></h2>
       <Chart/>
-      <div className="d-flex justify-content-center">
+      <div className="d-flex justify-content-center my-4">
       <div className="p-2">Rank={coin.market_cap_rank}</div>
       <div className="p-2">Current Price={coin.market_data? "$" +numberWithCommas(coin.market_data.current_price.usd.toFixed(2)) : null}</div>
       <div className="p-2">Market Cap={coin.market_data? "$" +numberWithCommas(coin.market_data.market_cap.usd.toFixed(2)) : null}</div>
