@@ -9,6 +9,8 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+// import Topcryp from './components/Topcryp';
+import Homepage from './components/Homepage';
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Home/>} ></Route>
         <Route exact path='/coin/:coinId' element={<CrypDetail key="cryp" />}></Route>
+        <Route exact path='/coin/:coinId' element={<Homepage key="cry" />}></Route>
       </Routes>
       </Router>
       

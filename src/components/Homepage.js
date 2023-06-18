@@ -1,5 +1,5 @@
 import React from 'react'
-import Topcryp from './Topcryp';
+import {Link} from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 export default function Homepage() {
@@ -26,14 +26,27 @@ export default function Homepage() {
         <div className='container'>
           <div className="container d-flex justify-content-around" style={{marginTop:'80px'}}>
 
-          {parseData.map((element)=>{
-            if(element.market_cap_rank<=4){
-              return <Topcryp key={element.id} name={element.name} imgURL={element.image} change={element.price_change_percentage_24h} price={element.current_price}/>
+          
+          <div className='d-flex justify-content-evenly' >
+
+          {parseData.map((item)=>{
+            if(item.market_cap_rank<=4){
+              return <Link to={`/coin/${item.id}`}  style={{textDecoration:"none", color:"black"}}>
+          <div  style={{display : 'flex', flexDirection : 'column', margin:'50px'}}>
+            <div><img src={item.image} alt="" style={{height:'200px', width: '200px'}} /></div>
+            <div style={{fontSize : '1.5rem' }}>{item.name} <span style={{color : item.price_change_percentage_24h>0?'green':'red'}}>{item.price_change_percentage_24h.toFixed(2)}%</span></div>
+            <div style={{fontSize : '1.5rem'}}>${item.current_price.toFixed(2)}</div>
+          </div>
+          </Link>
             }
             else{
               return null;
             }
           })}
+          </div>
+            
+            
+         
           </div>
           
         </div>
