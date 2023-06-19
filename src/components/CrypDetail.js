@@ -24,14 +24,14 @@ export default function CrypDetail() {
     // eslint-disable-next-line
   }, []);
   return (
-    <><div className='container' id='container' style={{ marginTop: "60px", display:'flex',flexDirection : 'row', justifyContent : 'around', alignItems : 'center' }}>
+    <><div className='container' id='Container' style={{ marginTop: "60px", display:'flex',flexDirection : 'row', justifyContent : 'around', alignItems : 'center' }}>
       <div className="image" style={{marginTop:'30px'}}>
-      {coin.image ? <img src={coin.image.large} alt={coin.id} /> : null}
+      {coin.image ? <img src={coin.image.large} alt={coin.id} id='detailimage' /> : null}
       <h2 style={{ textTransform: "uppercase" }}><strong>{coin.name}({coin.symbol})</strong></h2>
       <div className="p-2">Rank={coin.market_cap_rank}</div>
       </div>
-      <div className="info" id="info" style={{height:'320px',width:'800px'}}>
-      <div className="d-flex justify-content-center my-4">
+      <div className="info" id="info" style={{height:'320px',width:'800px', display : 'flex',flexDirection : 'column', justifyContent : 'center' }}>
+      <div id="detailheading" style={{display : 'flex', justifyContent : 'center'}}>
         <div className="p-2">Current Price={coin.market_data ? "$" + numberWithCommas(coin.market_data.current_price.usd.toFixed(2)) : null}</div>
         <div className="p-2">Market Cap={coin.market_data ? "$" + numberWithCommas(coin.market_data.market_cap.usd.toFixed(2)) : null}</div>
         <div className="p-2">Price Change={coin.market_data ? coin.market_data.price_change_percentage_24h.toFixed(2) + "%" : ""}</div>

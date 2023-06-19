@@ -178,16 +178,35 @@ tr{
   
 
 }
-@media  screen and (max-width:375px) {
-  #container{
-    display: flex;
+@media screen and (max-width : 1400px) {
+  #Container{
     flex-direction: column !important;
-    justify-content: center !important;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width : 800px) {
+  #detailimage{
+    height : 200px;
+    width : 200px;
   }
   #info{
-    margin-left:'0px'!important;
-    width:'500px'!important;
-    overflow:hidden !important;
+    width : 400px !important;
+    
   }
-
+  #description{
+    width : 400px !important;
+  }
+  #detailheading{
+    flex-direction: column !important;
+  }
+  #chart{
+    width : 650px !important;
+    
+  }
+}
+@media screen and (max-width : 991px) {
+  #search{
+    right : 60px !important;
+    width : 130px !important;
+  }
 }

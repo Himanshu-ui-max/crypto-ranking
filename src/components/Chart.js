@@ -78,14 +78,19 @@ export default function HistoryChart  () {
             
   return (
     <>
-            <div className="btn-group my-2 " role="group" aria-label="Default button group">
+    <div   >
+            <div className="btn-group  " role="group" aria-label="Default button group" style={{margin : '50px 0px'}}>
             <button type="button" className="btn btn-outline-primary rounded mx-3" onClick={handle1D}>1 D</button>
             <button type="button" className="btn btn-outline-primary rounded mx-3" onClick={handle1W}>1 W</button>
             <button type="button" className="btn btn-outline-primary rounded mx-3" onClick={handle1M}>1 M</button>
             <button type="button" className="btn btn-outline-primary rounded mx-3" onClick={handle1Y}>1 Y</button>
             </div>
-    <div>
+            <div style={{overflow : 'auto'}}>
+
+    <div id='chart' style={{margin : 'auto', overflow : 'hidden'}}>
       <Line options={options} data={data} />
+    </div>
+            </div>
     </div>
     </>
   )
