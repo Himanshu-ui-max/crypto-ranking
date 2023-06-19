@@ -177,3 +177,9 @@ tr{
   
 
 }
+@media screen and (max-width : 991px) {
+  #search{
+    position: absolute;
+    right : 73px !important;
+  }
+}

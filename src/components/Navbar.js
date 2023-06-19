@@ -38,7 +38,7 @@ export default function Navbar() {
    
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top" style={{ zIndex : '-1'}}>
   <div className="container-fluid">
     <a className="navbar-brand" href="./">CryptoR</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,13 +56,14 @@ export default function Navbar() {
           <HashLink className="nav-link" to="/#choose us">Choose Us</HashLink>
         </li>
       </ul>
-      <form className="d-flex">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" onChange={handleFilter}/>
       
-      </form>
     </div>
   </div>
 </nav>
+<form id='search' className="d-flex " style={{position : 'absolute', top : '8px' , right : '30px' , zIndex : '1'}}>
+        <input className="form-control me-2 " type="search" placeholder="Search" aria-label="Search" onChange={handleFilter}/>
+      
+      </form>
 {filteredData?.length!==0 &&  (<div className="dataResult" style={{position : 'absolute',top : '50px', right : '0px'}} >
   {filteredData?.map((item)=>{
     return  <p><Link to={`/coin/${item.id}`} >{item.name}</Link></p>
