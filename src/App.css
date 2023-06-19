@@ -121,3 +121,21 @@ tr{
   overflow: hidden;
   overflow-y: auto;
 }
+@media screen and (max-width : 1344px) {
+  #heading{
+    font-size: 4rem !important;
+  }
+  #bitcoinimage{
+    height: 200px !important;
+    width: 200px !important;
+  }
+  #heading2{
+    font-size: 3rem !important;
+  }
+  #chooseUs{
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+}

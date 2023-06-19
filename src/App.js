@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Routes>
         <Route exact path='/' element={<Home/>} ></Route>
         <Route exact path='/coin/:coinId' element={<CrypDetail key="cryp" />}></Route>
