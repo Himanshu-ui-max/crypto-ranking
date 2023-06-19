@@ -28,25 +28,25 @@ ChartJS.register(
 export default function HistoryChart  () {
         const {coinId} = useParams ();
         const [chart, setChart] = useState({});
-        const [days, setDays] = useState('1');
+        
         const handle1D=()=>{
-          setDays('1');
+          chartData('1');
           setFormat('MMMM Do , h:mm:ss a')
         }
         const handle1W=()=>{
-          setDays('7');
+          chartData('7');
           setFormat('MMMM Do')
         }
         const handle1M=()=>{
-          setDays('30');
+          chartData('30');
           setFormat('MMMM Do')
         }
         const handle1Y=()=>{
-          setDays('365');
+          chartData('365');
           setFormat('MMMM YYYY')
         }
         const [format, setFormat] = useState('MMMM Do , h:mm:ss a');
-        const chartData = async () => {
+        const chartData = async (days) => {
             let url = `https://api.coingecko.com/api/v3/coins/${coinId}/market_chart?vs_currency=usd&days=${days}`;
             let data = await fetch(url);
             let parsedata = await data.json();
@@ -54,7 +54,7 @@ export default function HistoryChart  () {
             console.log(parsedata);
           }
           useEffect(() => {
-            chartData();
+            chartData('1');
             // eslint-disable-next-line
           }, []);
         const coinChartData = chart.prices?.map(value => ({ x: value[0],
