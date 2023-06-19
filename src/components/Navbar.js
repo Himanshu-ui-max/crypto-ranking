@@ -38,7 +38,7 @@ export default function Navbar() {
    
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top" style={{ zIndex : '-1'}}>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top" style={{ zIndex : '0'}}>
   <div className="container-fluid">
     <a className="navbar-brand" href="./">CryptoR</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,7 +60,7 @@ export default function Navbar() {
     </div>
   </div>
 </nav>
-<form id='search' className="d-flex " style={{position : 'absolute', top : '8px' , right : '30px' , zIndex : '1'}}>
+<form id='search' className="d-flex " style={{position : 'fixed', top : '8px' , right : '30px' , zIndex : '1'}}>
         <input className="form-control me-2 " type="search" placeholder="Search" aria-label="Search" onChange={handleFilter}/>
       
       </form>
