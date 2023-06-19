@@ -22,7 +22,7 @@ export default function Tabledata(props) {
     <tr className='d-flex justify-content-evenly' style={{fontSize:'1.6rem'}}>
       <th className='TabD' scope="row" style={{width : '300px', textAlign : 'left'}}><img src={item.image} alt="" style={{height : '40px', width : '40px'}} /> {item.name}</th>
       <td className='TabD' style={{width : '300px',textAlign :'left' }}>{"$"+numberWithCommas(item.current_price.toFixed(2))}</td>
-      <td className='TabD' style={{width : '300px', textAlign :'left'}}>{item.price_change_percentage_24h.toFixed(2)}%</td>
+      <td className='TabD' style={{width : '300px', textAlign :'left'}}>{item.price_change_percentage_24h.toFixed(2)>0?'+'+item.price_change_percentage_24h:item.price_change_percentage_24h}%</td>
       <td className='TabD' style={{width : '300px',textAlign :'left'}}>{"$"+numberWithCommas(item.market_cap)}</td>
       
     </tr>
