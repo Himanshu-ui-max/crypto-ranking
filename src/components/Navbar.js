@@ -1,10 +1,41 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
+import { Link } from 'react-router-dom';
 
 import { HashLink } from 'react-router-hash-link'
 
 
 
 export default function Navbar() {
+  const [parseData, setparseData] = useState();
+  const fetchData= async ()=>{
+    let url='https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=32&page=1&sparkline=false&price_change_percentage=1h&locale=en&precision=2'
+   let data=await fetch(url);
+   let parsedata=await data.json();
+   setparseData(parsedata);
+   
+   
+  }
+  useEffect(() => {
+    fetchData();
+   // eslint-disable-next-line
+    
+   }, []);
+   
+   const [filteredData, setfilteredData] = useState([]);
+   const handleFilter=(event)=>{
+    const searchValue = event.target.value;
+    
+    const newfilter=parseData?.filter((value)=>{
+      return value.name.toLowerCase().includes(searchValue.toLowerCase())
+    }) 
+    if(searchValue === ''){
+      setfilteredData([])
+   }
+   else{
+    setfilteredData(newfilter)
+   }
+   }
+   
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -26,12 +57,17 @@ export default function Navbar() {
         </li>
       </ul>
       <form className="d-flex">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success" type="submit">Search</button>
+        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" onChange={handleFilter}/>
+      
       </form>
     </div>
   </div>
 </nav>
+{filteredData?.length!==0 &&  (<div className="dataResult" style={{position : 'absolute',top : '50px', right : '0px'}} >
+  {filteredData?.map((item)=>{
+    return  <p><Link to={`/coin/${item.id}`} >{item.name}</Link></p>
+  })}
+</div>)}
     </div>
   )
 }
