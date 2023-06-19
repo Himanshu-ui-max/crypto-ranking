@@ -181,5 +181,6 @@ tr{
   #search{
     position: absolute;
     right : 73px !important;
+    width : 150px !important;
   }
 }
