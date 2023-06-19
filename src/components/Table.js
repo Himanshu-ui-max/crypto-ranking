@@ -36,10 +36,10 @@ export default function Table() {
     // eslint-disable-next-line
   }, []);
     return (
-        <section id='table'style={{paddingTop : '75px', height:'150vh'}}>
+        <section style={{paddingTop : '75px', height:'150vh'}}>
 
         <div>
-            <div >
+            <div id='table' >
 
                 <TableHeading />
                 <hr />
@@ -78,15 +78,15 @@ export default function Table() {
                          <Tabledata parseData={parseData} />
                     
                     
-                    <div className="container d-flex justify-content-around" style={{marginTop : '50px', marginBottom :'200px'}} >
-                        <button className="round" onClick={first}>1</button>
-                        <button className="round" onClick={second}>2</button>
-                        <button className="round" onClick={third}>3</button>
-                        <button className="round" onClick={fourth}>4</button>
-                        {/* <button className="round" onClick={fifth}>5</button> */}
-                    </div>
                 </div>
             </div>
+                    <div className="container d-flex justify-content-evenly" style={{marginTop : '50px', marginBottom :'200px'}} >
+                        <button  className="round" onClick={first}>1</button>
+                        <button  className="round" onClick={second}>2</button>
+                        <button  className="round" onClick={third}>3</button>
+                        <button  className="round" onClick={fourth}>4</button>
+                        {/* <button className="round" onClick={fifth}>5</button> */}
+                    </div>
         </div>
         </section>
     )

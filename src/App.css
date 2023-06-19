@@ -137,5 +137,43 @@ tr{
     justify-content: center;
     align-items: center;
   }
+  .round{
+    width: 35px !important;
+    height: 35px !important;
+    font-size: 1rem !important;
+  }
+  #table{
+    overflow: hidden !important;
+    overflow-x: auto !important;
+  }
+  #tableheading{
+    overflow: hidden !important;
+    overflow-x: auto !important ;
+  }
+  #topcrypto{
+    flex-direction: column !important;
+
+
+  }
+  #topimages{
+    height: 100px !important;
+    width: 100px !important;
+  }
+  #topname{
+    font-size: 1rem !important;
+  }
+  #topprices{
+    font-size: 1rem !important;
+  }
+  .TabH{
+    font-size: 1.2rem !important;
+    width : 200px !important;
+  }
+  
+  .TabD{
+    font-size: 1rem !important;
+    width : 200px !important;
+  }
+  
 
 }

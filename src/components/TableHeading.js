@@ -2,12 +2,20 @@ import React from 'react'
 
 function TableHeading() {
   return (
-    <div className='d-flex justify-content-evenly'>
+    <div id='headingdiv' >
       
-      <div style={{width : '500px'}}  ><h5 style={{fontSize : '3.5rem'}}>Coin</h5></div>
-      <div style={{width : '500px'}}  ><h5 style={{fontSize : '3.5rem'}}>Price</h5></div>
-      <div style={{width : '500px'}}  ><h5 style={{fontSize : '3.5rem'}}>1H change</h5></div>
-      <div style={{width : '500px'}}  ><h5 style={{fontSize : '3.5rem'}}>MarketCap</h5></div>
+      <table id='tableheading' className="table table-borderless">
+  <tbody>
+    <tr className='d-flex justify-content-evenly' >
+      <th className='TabH' style={{ textAlign : 'left', fontSize : '1.8rem', width : '300px'}}>Coin</th>
+      <th className='TabH' style={{ textAlign : 'left', fontSize : '1.8rem', width : '300px'}}>Price</th>
+      <th className='TabH' style={{ textAlign : 'left', fontSize : '1.8rem', width : '300px'}}>1H Change</th>
+      <th className='TabH' style={{ textAlign : 'left', fontSize : '1.8rem', width : '300px'}}>MarketCap</th>
+    </tr>
+
+    <hr />
+  </tbody>
+</table>
     
     </div>
   )

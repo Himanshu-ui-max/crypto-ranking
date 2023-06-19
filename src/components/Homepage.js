@@ -16,7 +16,7 @@ export default function Homepage() {
    cryptodata();
   }, []);
   return (
-    <section id='homepage' style={{paddingTop: '100px', height : '100vh', width : '100vw'}}>
+    <section id='homepage' style={{paddingTop: '100px', width : '100vw'}}>
 
     <div >
       <div className="container my-3" style={{ width : '100vw'}}>
@@ -27,15 +27,15 @@ export default function Homepage() {
           <div className="container d-flex justify-content-around" style={{marginTop:'80px'}}>
 
           
-          <div  style={{display : 'flex', justifyContent : 'space-evenly'} } >
+          <div id='topcrypto'  style={{display : 'flex', justifyContent : 'space-evenly'} } >
 
           {parseData.map((item)=>{
             if(item.market_cap_rank<=4){
-              return <Link to={`/coin/${item.id}`}  style={{textDecoration:"none", color:"black"}}>
-          <div  style={{display : 'flex', flexDirection : 'column', margin:'50px'}}>
-            <div><img  src={item.image} alt="" style={{height:'200px', width: '200px'}} /></div>
-            <div style={{fontSize : '1.5rem' }}>{item.name} <span style={{color : item.price_change_percentage_24h>0?'green':'red'}}>{item.price_change_percentage_24h.toFixed(2)}%</span></div>
-            <div style={{fontSize : '1.5rem'}}>${item.current_price.toFixed(2)}</div>
+              return <Link id='toplink' to={`/coin/${item.id}`}  style={{textDecoration:"none", color:"black"}}>
+          <div id='topdiv'  style={{display : 'flex', flexDirection : 'column', margin:'50px'}}>
+            <div><img id='topimages'  src={item.image} alt="" style={{height:'200px', width: '200px'}} /></div>
+            <div id='topname' style={{fontSize : '1.5rem' }}>{item.name} <span style={{color : item.price_change_percentage_24h>0?'green':'red'}}>{item.price_change_percentage_24h.toFixed(2)}%</span></div>
+            <div id='topprices' style={{fontSize : '1.5rem'}}>${item.current_price.toFixed(2)}</div>
           </div>
           </Link>
             }
