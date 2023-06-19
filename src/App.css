@@ -175,13 +175,19 @@ tr{
     width : 200px !important;
   }
   
+  
 
 }
-@media screen and (max-width : 991px) {
-  #search{
-    position: absolute;
-    right : 73px !important;
-    width : 150px !important;
+@media  screen and (max-width:375px) {
+  #container{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
   }
-  
+  #info{
+    margin-left:'0px'!important;
+    width:'500px'!important;
+    overflow:hidden !important;
+  }
+
 }
