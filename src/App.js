@@ -1,5 +1,5 @@
 import './App.css';
-// import Navbar from './components/Navbar';
+import Navbar from './components/Navbar';
 import Home from './components/Home';
 import CrypDetail from './components/CrypDetail';
 
@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-      {/* <Navbar/> */}
+      <Navbar/>
       <Routes>
         <Route exact path='/' element={<Home/>} ></Route>
         <Route exact path='/coin/:coinId' element={<CrypDetail key="cryp" />}></Route>
