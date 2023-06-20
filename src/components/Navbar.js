@@ -7,6 +7,7 @@ import { HashLink } from 'react-router-hash-link'
 
 export default function Navbar() {
   const [parseData, setparseData] = useState();
+  const [searchvalue, setsearchvalue] = useState('');
   const fetchData= async ()=>{
     let url='https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=32&page=1&sparkline=false&price_change_percentage=1h&locale=en&precision=2'
    let data=await fetch(url);
@@ -23,12 +24,12 @@ export default function Navbar() {
    
    const [filteredData, setfilteredData] = useState([]);
    const handleFilter=(event)=>{
-    const searchValue = event.target.value;
+     setsearchvalue(event.target.value);
     
     const newfilter=parseData?.filter((value)=>{
-      return value.name.toLowerCase().includes(searchValue.toLowerCase())
+      return value.name.toLowerCase().includes(searchvalue.toLowerCase())
     }) 
-    if(searchValue === ''){
+    if(searchvalue === ''){
       setfilteredData([])
    }
    else{
@@ -36,7 +37,25 @@ export default function Navbar() {
    }
    }
    const handleOnCLick=()=>{
-    setfilteredData([]);
+    setsearchvalue('');
+   }
+   const [forHome, setforHome] = useState('nav-link active');
+   const [forMarket, setForMarket] = useState('nav-link');
+   const [forChooseUs, setForChooseUs] = useState('nav-link');
+   const handleMarket=()=>{
+    setForMarket('nav-link active');
+    setForChooseUs('nav-link');
+    setforHome('nav-link');
+   }
+   const handleChooseUS=()=>{
+    setForMarket('nav-link');
+    setForChooseUs('nav-link active');
+    setforHome('nav-link');
+   }
+   const handleHome=()=>{
+    setForMarket('nav-link');
+    setForChooseUs('nav-link');
+    setforHome('nav-link active');
    }
   return (
     <div>
@@ -49,13 +68,13 @@ export default function Navbar() {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <HashLink className="nav-link active" aria-current="page" to="/#homepage">Home</HashLink>
+          <HashLink className={forHome} aria-current="page" to="/#homepage" onClick={handleHome}>Home</HashLink>
         </li>
         <li className="nav-item">
-          <HashLink className="nav-link" to="/#table">Market</HashLink>
+          <HashLink className={forMarket} to="/#table" onClick={handleMarket}>Market</HashLink>
         </li>
         <li className="nav-item">
-          <HashLink className="nav-link" to="/#choose us">Choose Us</HashLink>
+          <HashLink className={forChooseUs} to="/#choose us" onClick={handleChooseUS}>Choose Us</HashLink>
         </li>
       </ul>
       
