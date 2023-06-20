@@ -35,7 +35,9 @@ export default function Navbar() {
     setfilteredData(newfilter)
    }
    }
-   
+   const handleOnCLick=()=>{
+    setfilteredData([]);
+   }
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top" style={{ zIndex : '0'}}>
@@ -66,7 +68,7 @@ export default function Navbar() {
       </form>
 {filteredData?.length!==0 &&  (<div className="dataResult" style={{position : 'absolute',top : '50px', right : '0px'}} >
   {filteredData?.map((item)=>{
-    return  <p><Link to={`/coin/${item.id}`} >{item.name}</Link></p>
+    return  <p><Link to={`/coin/${item.id}`} onClick={handleOnCLick} >{item.name}</Link></p>
   })}
 </div>)}
     </div>
