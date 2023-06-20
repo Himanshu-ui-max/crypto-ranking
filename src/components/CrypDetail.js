@@ -25,7 +25,7 @@ export default function CrypDetail() {
   useEffect(() => {
     cryptodata();
     // eslint-disable-next-line
-  }, []);
+  }, [coinId]);
   if (!loading) {
     return (
       <><div className='container' id='Container' style={{ marginTop: "60px", display: 'flex', flexDirection: 'row', justifyContent: 'around', alignItems: 'center' }}>
