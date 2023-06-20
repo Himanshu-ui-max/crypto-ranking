@@ -10,17 +10,19 @@ import {
   Route,
 } from "react-router-dom";
 
-import Homepage from './components/Homepage';
+// import Homepage from './components/Homepage';
+
 
 function App() {
   return (
     <div className="App">
       <Router>
       <Navbar/>
+      
       <Routes>
         <Route exact path='/' element={<Home/>} ></Route>
         <Route exact path='/coin/:coinId' element={<CrypDetail key="cryp" />}></Route>
-        <Route exact path='/coin/:coinId' element={<Homepage key="cry" />}></Route>
+        {/* <Route exact path='/coin/:coinId' element={<Homepage key="cry" />}></Route> */}
       </Routes>
       </Router>
       

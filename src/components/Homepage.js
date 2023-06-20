@@ -1,13 +1,17 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import Spinner from './Spinner';
 
 export default function Homepage() {
   const [parseData, setparseData] = useState([]);
+  const [loading, setloading] = useState(false);
   const cryptodata=async ()=>{
     let url='https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=8&page=1&sparkline=false&price_change_percentage=1h&locale=en&precision=2'
+    setloading(true);
    let data=await fetch(url);
    let parsedata=await data.json();
+   setloading(false);
    setparseData(parsedata);
    console.log(parsedata);
   }
@@ -28,8 +32,8 @@ export default function Homepage() {
 
           
           <div id='topcrypto'  style={{display : 'flex', justifyContent : 'space-evenly'} } >
-
-          {parseData.map((item)=>{
+          {loading && (<Spinner/>)}
+          {!loading && (parseData.map((item)=>{
             if(item.market_cap_rank<=4){
               return <Link id='toplink' to={`/coin/${item.id}`}  style={{textDecoration:"none", color:"black"}}>
           <div id='topdiv'  style={{display : 'flex', flexDirection : 'column', margin:'50px'}}>
@@ -42,7 +46,7 @@ export default function Homepage() {
             else{
               return null;
             }
-          })}
+          }))}
           </div>
             
             
