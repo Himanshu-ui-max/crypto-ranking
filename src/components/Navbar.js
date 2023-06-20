@@ -37,7 +37,7 @@ export default function Navbar() {
    }
    }
    const handleOnCLick=()=>{
-    setsearchvalue('');
+    setfilteredData([]);
    }
    const [forHome, setforHome] = useState('nav-link active');
    const [forMarket, setForMarket] = useState('nav-link');
