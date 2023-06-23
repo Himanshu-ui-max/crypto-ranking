@@ -25,7 +25,7 @@ export default function Homepage() {
     <div >
       <div className="container my-3" style={{ width : '100vw'}}>
       
-        <h1 id='heading'  style={{ fontSize:"6rem", height:'150px'}}>Welcome to Crypto-Ranking!</h1>
+        <h1 id='heading'  style={{ fontSize:"7.5rem", height:'150px',marginBottom:'200px'}}>Welcome to Crypto-Ranking!</h1>
          
         <div className='container'>
           <div className="container d-flex justify-content-around" style={{marginTop:'80px'}}>

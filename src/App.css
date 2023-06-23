@@ -211,7 +211,7 @@ tr{
   }
 }
 body{
-  background: linear-gradient(0.35turn,#2C3E50 , #000000);
+  background: linear-gradient(0deg, #000000,#2C3E50 ) !important;
   font-family:'Kanit';
   color: rgb(252, 253, 254) !important;
 }
