@@ -35,7 +35,7 @@ export default function Homepage() {
           {loading && (<Spinner/>)}
           {!loading && (parseData.map((item)=>{
             if(item.market_cap_rank<=4){
-              return <Link id='toplink' to={`/coin/${item.id}`}  style={{textDecoration:"none", color:"black"}}>
+              return <Link id='toplink' to={`/coin/${item.id}`}  style={{textDecoration:"none", color:'white'}}>
           <div id='topdiv'  style={{display : 'flex', flexDirection : 'column', margin:'50px'}}>
             <div><img id='topimages'  src={item.image} alt="" style={{height:'200px', width: '200px'}} /></div>
             <div id='topname' style={{fontSize : '1.5rem' }}>{item.name} <span style={{color : item.price_change_percentage_24h>0?'green':'red'}}>{item.price_change_percentage_24h.toFixed(2)}%</span></div>

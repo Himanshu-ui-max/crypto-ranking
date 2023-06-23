@@ -28,7 +28,7 @@ export default function CrypDetail() {
   }, [coinId]);
   if (!loading) {
     return (
-      <><div className='container' id='Container' style={{ marginTop: "60px", display: 'flex', flexDirection: 'row', justifyContent: 'around', alignItems: 'center' }}>
+      <><div className='container' id='Container' style={{ marginTop: "60px", display: 'flex', flexDirection: 'row', justifyContent: 'around', alignItems: 'center',color:'white'}}>
         <div className="image" style={{ marginTop: '30px' }}>
           {coin.image ? <img src={coin.image.large} alt={coin.id} id='detailimage' /> : null}
           <h2 style={{ textTransform: "uppercase" }}><strong>{coin.name}({coin.symbol})</strong></h2>
@@ -41,7 +41,7 @@ export default function CrypDetail() {
             <div className="p-2">Price Change={coin.market_data ? coin.market_data.price_change_percentage_24h.toFixed(2) + "%" : ""}</div>
           </div>
           <div className="description" id="description" style={{ height: '230px', width: '800px', overflow: 'auto', textAlign: 'left', padding: '30px' }}>
-            <p dangerouslySetInnerHTML={{
+            <p style={{color:'white'}} dangerouslySetInnerHTML={{
               __html: DOMPurify.sanitize(
                 coin.description ? coin.description.en : ""
               ),
