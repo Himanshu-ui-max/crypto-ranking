@@ -22,7 +22,7 @@ function App() {
       <Navbar/>
       
       <Routes>
-        <Route exact path='/' element={<Home/>} ></Route>" 
+        <Route exact path='/' element={<Home/>} ></Route> 
         <Route exact path='/coin/:coinId' element={<CrypDetail key={`coinId`}  />}></Route>
         {/* <Route exact path='/coin/:coinId' element={<Homepage key="cry" />}></Route> */}
       </Routes>

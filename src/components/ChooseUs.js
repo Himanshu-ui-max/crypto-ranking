@@ -14,20 +14,20 @@ function ChooseUs() {
             
         <div className="card my-3" style={{width: '18rem',zIndex : '-1'}}>
         <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 className="card-title">CONNECT YOUR WALLET</h5>
+            <p className="card-text">Use Trust Wallet, Metamask or to connect to the app.</p>
         </div>
         </div>
         <div className="card my-3" style={{width: '18rem',zIndex : '-1'}}>
             <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 className="card-title">SELECT YOUR QUANTITY</h5>
+            <p className="card-text">Upload your crypto and set a title, description and price.</p>
         </div>
         </div>
         <div className="card my-3" style={{width: '18rem',zIndex : '-1'}}>
         <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 className="card-title">CONFIRM TRANSACTION</h5>
+            <p className="card-text">Earn by selling your crypto on our marketplace.</p>
         </div>
         </div>
         </div>
@@ -40,20 +40,20 @@ function ChooseUs() {
             
         <div className="card my-3" style={{width: '18rem',zIndex : '-1'}}>
         <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 className="card-title">RECEIVE YOUR OWN NFTS</h5>
+            <p className="card-text">Invest all your crypto at one place on one platform.</p>
         </div>
         </div>
         <div className="card my-3" style={{width: '18rem',zIndex : '-1'}}>
         <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 className="card-title">TAKE A MARKET TO SELL</h5>
+            <p className="card-text">Discover, collect the right crypto collections to buy or sell.</p>
         </div>
         </div>
         <div className="card my-3" style={{width: '18rem',zIndex : '-1'}}>
         <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 className="card-title">DRIVE YOUR COLLECTION</h5>
+            <p className="card-text">We make it easy to Discover, Invest and manage.</p>
         </div>
         </div>
         </div>

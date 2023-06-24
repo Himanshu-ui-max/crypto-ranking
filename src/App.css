@@ -6,6 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
+.navbar-brand:hover{
+  color: white !important;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

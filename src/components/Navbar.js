@@ -61,7 +61,7 @@ export default function Navbar() {
     <div >
       <nav id='navbarr'className="navbar navbar-expand-lg navbar-light bg-light fixed-top" style={{ zIndex : '0'}}>
   <div className="container-fluid" style={{color:'white'}}>
-    <a id='mainitem' className="navbar-brand" href="./"><strong>CryptoR</strong></a>
+    <a className="navbar-brand" href="/#homepage"><strong>CryptoR</strong></a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
