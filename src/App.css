@@ -204,10 +204,14 @@ tr{
     
   }
 }
-@media screen and (max-width : 991px) {
+@media screen and (max-width : 992px) {
   #search{
-    right : 60px !important;
+    right : 68px !important;
     width : 130px !important;
+  }
+  #navitems{
+    margin-left:auto !important;
+    
   }
 }
 body{
