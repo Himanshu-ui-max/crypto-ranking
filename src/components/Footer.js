@@ -10,11 +10,11 @@ function Footer() {
         <hr />
       <footer>
         <div className="container" style={{display:'flex',justifyContent:'center',margin:'20px auto'}} >
-          <div style={{height:'48px',width:'48px',margin:'20px auto'}}>
+          <div style={{height:'48px',width:'48px',margin:'20px'}}>
             <img src={fb} alt="" style={{width:"50px", height:"50px", margin:"1px auto 49px auto", cursor:"pointer",}}/>
             </div>
-            <img src={twitter} alt="" style={{width:"50px", height:"50px", margin:"20px", cursor:"pointer"}} />
-            <img src={yt} alt="" style={{width:"50px", height:"50px", margin:"20px", cursor:"pointer"}} />
+            <img src={twitter} alt="" style={{width:"54px", height:"54px", margin:"20px", cursor:"pointer"}} />
+            <img src={yt} alt="" style={{width:"65px", height:"50px", margin:"20px", cursor:"pointer"}} />
         </div>
         <div className="container" style={{color:'white'}}>
             <p style={{margin:"20px", cursor:"pointer"}}>Privacy</p>
