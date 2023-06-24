@@ -141,8 +141,11 @@ tr{
     height: 200px !important;
     width: 200px !important;
   }
-  #heading2{
-    font-size: 3rem !important;
+  #headingD{
+    font-size: 4rem !important;
+  }
+  #tabhead{
+    font-size: 1.75rem !important;
   }
   #chooseUs{
     flex-direction: column !important;
@@ -238,11 +241,11 @@ body{
   background: #2C3E50  !important;
 }
 #navitems{
-  margin-left:23vw;
+  margin-left:20vw;
   gap:50px;
 }
 .navbar-brand{
-  margin-left:7vw;
+  margin-left:5vw;
   font-size: 2rem;
   text-transform: uppercase;
   color:'white' !important;

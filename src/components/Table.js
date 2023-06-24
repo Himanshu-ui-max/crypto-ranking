@@ -38,7 +38,7 @@ export default function Table() {
     // eslint-disable-next-line
   }, []);
   return (
-    <section style={{ paddingTop: '45px', height: '150vh' }}>
+    <section style={{ paddingTop: '45px', height: '125vh' }}>
 
       <div>
         <div id='table' >
