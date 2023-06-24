@@ -81,7 +81,7 @@ export default function Navbar() {
     </div>
   </div>
 </nav>
-<form id='search' className="d-flex " style={{position : 'fixed', top : '8px' , right : '30px' , zIndex : '1'}}>
+<form id='search' className="d-flex " style={{position : 'fixed', top : '8px' , right : '140px' , zIndex : '1'}}>
         <input className="form-control me-2 " type="search" placeholder="Search" aria-label="Search" onChange={handleFilter}/>
       
       </form>
