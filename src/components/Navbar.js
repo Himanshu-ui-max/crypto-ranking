@@ -58,7 +58,7 @@ export default function Navbar() {
     setforHome('nav-link');
    }
   return (
-    <div>
+    <div className="d-flex justify-content-around" >
       <nav id='navbarr'className="navbar navbar-expand-lg navbar-light bg-light fixed-top" style={{ zIndex : '0'}}>
   <div className="container-fluid" style={{color:'white'}}>
     <a id='mainitem' className="navbar-brand" href="./"><strong>CryptoR</strong></a>
@@ -81,7 +81,7 @@ export default function Navbar() {
     </div>
   </div>
 </nav>
-<form id='search' className="d-flex " style={{position : 'fixed', top : '8px' , right : '140px' , zIndex : '1'}}>
+<form id='search' className="d-flex " style={{position : 'fixed', top : '8px' , right : '7vw' , zIndex : '1'}}>
         <input className="form-control me-2 " type="search" placeholder="Search" aria-label="Search" onChange={handleFilter}/>
       
       </form>

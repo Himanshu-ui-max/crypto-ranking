@@ -222,11 +222,11 @@ body{
   background: #2C3E50  !important;
 }
 #navitems{
-  margin-left:330px;
+  margin-left:23vw;
   gap:50px;
 }
 .navbar-brand{
-  margin-left:140px;
+  margin-left:7vw;
   font-size: 1.6rem;
   text-transform: uppercase;
   color:'white' !important;
