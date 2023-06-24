@@ -25,19 +25,19 @@ export default function Homepage() {
     <div >
       <div className="container my-3" style={{ width : '100vw'}}>
       
-        <h1 id='heading'  style={{ fontSize:"7.5rem", height:'150px',marginBottom:'200px'}}>Welcome to Crypto-Ranking!</h1>
+        <h1 id='heading'  style={{ fontSize:"7.5rem", height:'90px',marginBottom:'200px'}}>Welcome to Crypto-Ranking!</h1>
          
         <div className='container'>
           <div className="container d-flex justify-content-around" style={{marginTop:'80px'}}>
 
           
-          <div id='topcrypto'  style={{display : 'flex', justifyContent : 'space-evenly'} } >
+          <div id='topcrypto'  style={{display : 'flex', justifyContent : 'space-evenly',gap:'50px',margin:'0px auto'} } >
           {loading && (<Spinner/>)}
           {!loading && (parseData.map((item)=>{
             if(item.market_cap_rank<=4){
               return <Link id='toplink' to={`/coin/${item.id}`}  style={{textDecoration:"none", color:'white'}}>
           <div id='topdiv'  style={{display : 'flex', flexDirection : 'column', margin:'50px'}}>
-            <div><img id='topimages'  src={item.image} alt="" style={{height:'200px', width: '200px'}} /></div>
+            <div><img id='topimages'  src={item.image} alt="" style={{height:'150px', width: '150px'}} /></div>
             <div id='topname' style={{fontSize : '1.5rem' }}>{item.name} <span style={{color : item.price_change_percentage_24h>0?'green':'red'}}>{item.price_change_percentage_24h.toFixed(2)}%</span></div>
             <div id='topprices' style={{fontSize : '1.5rem'}}>${item.current_price.toFixed(2)}</div>
           </div>
@@ -48,11 +48,7 @@ export default function Homepage() {
             }
           }))}
           </div>
-            
-            
-         
           </div>
-          
         </div>
       </div>
     </div>

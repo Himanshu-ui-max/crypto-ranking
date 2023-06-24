@@ -42,6 +42,11 @@ export default function Navbar() {
    const [forHome, setforHome] = useState('nav-link active');
    const [forMarket, setForMarket] = useState('nav-link');
    const [forChooseUs, setForChooseUs] = useState('nav-link');
+   const handleHome=()=>{
+    setForMarket('nav-link');
+    setForChooseUs('nav-link');
+    setforHome('nav-link active');
+   }
    const handleMarket=()=>{
     setForMarket('nav-link active');
     setForChooseUs('nav-link');
@@ -52,29 +57,24 @@ export default function Navbar() {
     setForChooseUs('nav-link active');
     setforHome('nav-link');
    }
-   const handleHome=()=>{
-    setForMarket('nav-link');
-    setForChooseUs('nav-link');
-    setforHome('nav-link active');
-   }
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top" style={{ zIndex : '0'}}>
-  <div className="container-fluid">
-    <a className="navbar-brand" href="./">CryptoR</a>
+      <nav id='navbarr'className="navbar navbar-expand-lg navbar-light bg-light fixed-top" style={{ zIndex : '0'}}>
+  <div className="container-fluid" style={{color:'white'}}>
+    <a id='mainitem' className="navbar-brand" href="./"><strong>CryptoR</strong></a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <HashLink className={forHome} aria-current="page" to="/#homepage" onClick={handleHome}>Home</HashLink>
+      <ul id='navitems'className="navbar-nav me-auto mb-2 mb-lg-0"  >
+        <li className="nav-item" >
+          <HashLink className={forHome} aria-current="page" to="/#homepage" onClick={handleHome}><strong>Home</strong></HashLink>
         </li>
         <li className="nav-item">
-          <HashLink className={forMarket} to="/#table" onClick={handleMarket}>Market</HashLink>
+          <HashLink className={forMarket} to="/#table" onClick={handleMarket}><strong>Market</strong></HashLink>
         </li>
         <li className="nav-item">
-          <HashLink className={forChooseUs} to="/#choose us" onClick={handleChooseUS}>Choose Us</HashLink>
+          <HashLink className={forChooseUs} to="/#choose us" onClick={handleChooseUS}><strong>Choose Us</strong></HashLink>
         </li>
       </ul>
       

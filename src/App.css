@@ -215,3 +215,29 @@ body{
   font-family:'Kanit';
   color: rgb(252, 253, 254) !important;
 }
+#tableheading{
+  background: linear-gradient(138deg, rgba(19,182,40,1) 0%, rgba(0,212,255,1) 100%);
+}
+#navbarr{
+  background: #2C3E50  !important;
+}
+#navitems{
+  margin-left:400px;
+  gap:50px;
+}
+.navbar-brand{
+  margin-left:150px;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color:'white' !important;
+  
+}
+.navbar-light .navbar-brand {
+  color: rgba(255, 251, 251, 0.9);
+  
+}
+.navbar-light .navbar-nav .nav-link {
+  color:rgba(255, 251, 251, 0.9);
+  font-size: 1rem !important;
+}
+
