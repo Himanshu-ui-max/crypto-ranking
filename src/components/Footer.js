@@ -1,8 +1,8 @@
 import React from 'react'
-import fb from './fb.png'
-import twitter from './twitter.png'
-import yt from './yt.png'
 
+import {FaFacebook} from 'react-icons/fa';
+import {FaYoutube} from 'react-icons/fa';
+import {FaTwitter} from 'react-icons/fa';
 
 function Footer() {
   return (
@@ -11,14 +11,18 @@ function Footer() {
       <footer>
         <div className="container" style={{display:'flex',justifyContent:'center',margin:'20px auto'}} >
           <div style={{height:'48px',width:'48px',margin:'20px'}}>
-            <img src={fb} alt="" style={{width:"44px", height:"44px", margin:"1px auto 49px auto", cursor:"pointer",}}/>
+            <FaFacebook id='fb' style={{height:"45px", width:"45px"}}/>
             </div>
-            <img src={twitter} alt="" style={{width:"46px", height:"46px", margin:"20px", cursor:"pointer"}} />
-            <img src={yt} alt="" style={{width:"57px", height:"44px", margin:"20px", cursor:"pointer"}} />
+            <div style={{height:'48px',width:'48px',margin:'20px'}}>
+              <FaYoutube id='fb' style={{height:"47px", width:"47px"}}/>
+            </div>
+            <div style={{height:'48px',width:'48px',margin:'20px'}}>
+              <FaTwitter id='fb' style={{height:"45px", width:"45px"}}/>
+            </div>
         </div>
         <div className="container" style={{color:'white'}}>
-            <p style={{margin:"20px", cursor:"pointer"}}>Privacy</p>
-            <p style={{margin:"20px", cursor:"pointer"}}>Terms of Use</p>
+            <p style={{margin:"20px", cursor:"pointer"}}  ><span className="footergrad">Privacy</span></p>
+            <p style={{margin:"20px", cursor:"pointer"}}  ><span className="footergrad">Terms of Use</span></p>
         </div>
       </footer>
     </div>

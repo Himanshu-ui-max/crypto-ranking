@@ -262,24 +262,43 @@ body{
 .navbar-light .navbar-nav .nav-link:hover{
   font-size: 1.3rem;
   background: -webkit-linear-gradient( rgba(19,182,40,1) 0%, rgba(0,212,255,1) 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
   font-size: 1.3rem !important;
   background: -webkit-linear-gradient( rgba(19,182,40,1) 0%, rgba(0,212,255,1) 100%) !important;
+  background-clip: text;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
 }
 #headingD{
   font-size: 7.5rem;
   background: -webkit-linear-gradient( rgba(19,182,40,1) 0%, rgba(0,212,255,1) 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 #choosegrad{
   font-size: 7rem;
   background: -webkit-linear-gradient( rgba(19,182,40,1) 0%, rgba(0,212,255,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#fb:hover{
+  
+  background-clip: text;
+  -webkit-background-clip: text;
+  cursor: pointer;
+  color: rgb(103, 255, 204);   
+  background-color: rgb(103, 255, 204);
+}
+.footergrad:hover{
+  
+  background: -webkit-linear-gradient( rgba(19,182,40,1) 0%, rgba(0,212,255,1) 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
