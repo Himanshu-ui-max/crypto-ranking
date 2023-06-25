@@ -74,7 +74,7 @@ export default function Navbar() {
           <HashLink className={forMarket} to="/#table" onClick={handleMarket}><strong>Market</strong></HashLink>
         </li>
         <li className="nav-item">
-          <HashLink className={forChooseUs} to="/#choose us" onClick={handleChooseUS}><strong>Choose Us</strong></HashLink>
+          <HashLink className={forChooseUs} to="/#chooseus" onClick={handleChooseUS}><strong>Choose Us</strong></HashLink>
         </li>
       </ul>
       

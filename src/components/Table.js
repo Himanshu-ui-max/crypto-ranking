@@ -42,7 +42,6 @@ export default function Table() {
 
       <div>
         <div id='table' >
-
           <TableHeading />
           <hr />
           <div >
