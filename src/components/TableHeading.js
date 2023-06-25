@@ -4,7 +4,7 @@ function TableHeading() {
   return (
     <div id='headingdiv'  >
       <p id='tabhead'style={{textAlign:'left',fontSize:'2.5rem',marginLeft:'11vw'}}>Market Update</p>
-      <table id='tableheading' className="table table-borderless" style={{width: '76vw',margin: 'auto 5vw auto 11vw'}}>
+      <table id='tableheading' className="table table-borderless" style={{width: '76vw',margin: 'auto'}}>
   <tbody>
     <tr  id='tableheading'className='d-flex justify-content-evenly'style={{color:'black'}} >
       <th className='TabH' style={{ textAlign : 'left', fontSize : '1.8rem', width : '300px',marginLeft: '0px'}}>Coin</th>
