@@ -23,7 +23,7 @@ export default function Homepage() {
     <section id='homepage' style={{paddingTop: '100px', width : '98vw'}}>
 
     <div >
-      <div className="container my-3" style={{ width : '100vw'}}>
+      <div className="container my-3" style={{ width : '98vw'}}>
        <div style={{marginBottom: "50px"}}>
         <h1 id='heading'  style={{ fontSize:"7.5rem", }}>Welcome to</h1>
         <h1 id='headingD'  style={{ fontSize:"7.5rem", }}>Crypto-Ranking !</h1>

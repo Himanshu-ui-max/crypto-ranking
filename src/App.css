@@ -221,13 +221,20 @@ tr{
 }
 @media screen and (max-width : 992px) {
   #search{
-    right : 68px !important;
+    right : 120px !important;
     width : 130px !important;
   }
   #navitems{
     margin-left:auto !important;
     
   }
+  #choosegrad{
+    font-size: 6rem !important;
+  }
+  #heading2{
+    font-size: 6rem !important;
+  }
+  
 }
 body{
   background: linear-gradient(0deg, #000000,#2C3E50 ) !important;
