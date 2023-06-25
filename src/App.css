@@ -221,7 +221,7 @@ tr{
 }
 @media screen and (max-width : 992px) {
   #search{
-    right : 74px !important;
+    right : 82px !important;
     width : 130px !important;
   }
   #navitems{
@@ -314,4 +314,7 @@ body{
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.footergrad{
+  font-size: 1.1rem !important;
 }

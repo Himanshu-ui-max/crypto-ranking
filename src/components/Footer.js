@@ -21,8 +21,8 @@ function Footer() {
             </div>
         </div>
         <div className="container" style={{color:'white'}}>
-            <p style={{margin:"20px", cursor:"pointer"}}  ><span className="footergrad">Privacy</span></p>
-            <p style={{margin:"20px", cursor:"pointer"}}  ><span className="footergrad">Terms of Use</span></p>
+            <p style={{margin:"20px", cursor:"pointer"}}  ><span className="footergrad" >Privacy</span></p>
+            <p style={{margin:"20px", cursor:"pointer"}}  ><span className="footergrad" >Terms of Use</span></p>
         </div>
       </footer>
     </div>
