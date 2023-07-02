@@ -41,7 +41,7 @@ export default function Table() {
     <section id='tablecoin' style={{ paddingTop: '45px', height: '125vh' }}>
 
       <div>
-        <div id='table' >
+        <div id='table'>
           <TableHeading />
           <hr />
           <div >

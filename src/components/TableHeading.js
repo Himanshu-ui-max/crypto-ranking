@@ -7,10 +7,10 @@ function TableHeading() {
       <table id='tableheading' className="table table-borderless" style={{width: '76vw',margin: 'auto'}}>
   <tbody>
     <tr  id='tableheading'className='d-flex justify-content-evenly'style={{color:'black'}} >
-      <th className='TabH' style={{ textAlign : 'left', fontSize : '1.8rem', width : '240px',marginLeft: '60px'}}>Coin</th>
-      <th className='TabH' style={{ textAlign : 'left', fontSize : '1.8rem', width: '295px',marginLeft: '5px'}}>Price</th>
-      <th className='TabH' style={{ textAlign : 'left', fontSize : '1.8rem', width: '280px',marginLeft: '10px'}}>1H Change</th>
-      <th className='TabH' style={{ textAlign : 'right', fontSize : '1.8rem', width: '270px',marginLeft: '30px'}}>MarketCap</th>
+      <th className='TabH' style={{ textAlign : 'left', fontSize : '1.8rem', width : '300px'}}>Coin</th>
+      <th className='TabH' style={{ textAlign : 'left', fontSize : '1.8rem', width : '300px'}}>Price</th>
+      <th className='TabH' style={{ textAlign : 'left', fontSize : '1.8rem', width : '300px'}}>1H Change</th>
+      <th className='TabH' style={{ textAlign : 'right', fontSize : '1.8rem',width : '300px'}}>MarketCap</th>
     </tr>
 
     <hr />
