@@ -80,8 +80,7 @@ export default function Navbar() {
       
     </div>
   </div>
-</nav>
-<form id='search' className="d-flex " style={{position : 'fixed', top : '14px' , right : '10vw' , zIndex : '1'}}>
+  <form id='search' className="d-flex " style={{position : 'fixed', top : '14px' , right : '10vw' , zIndex : '1'}}>
         <input className="form-control me-2 " type="search" placeholder="Search" aria-label="Search" onChange={handleFilter}/>
       
       </form>
@@ -90,6 +89,8 @@ export default function Navbar() {
     return  <p><Link to={`/coin/${item.id}`} onClick={handleOnCLick} >{item.name}</Link></p>
   })}
 </div>)}
+</nav>
+
     </div>
   )
 }
