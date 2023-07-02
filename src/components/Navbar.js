@@ -7,7 +7,7 @@ import { HashLink } from 'react-router-hash-link'
 
 export default function Navbar() {
   const [parseData, setparseData] = useState();
-  const [searchvalue, setsearchvalue] = useState('');
+  
   const fetchData= async ()=>{
     let url='https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=32&page=1&sparkline=false&price_change_percentage=1h&locale=en&precision=2'
    let data=await fetch(url);
@@ -24,20 +24,16 @@ export default function Navbar() {
    
    const [filteredData, setfilteredData] = useState([]);
    const handleFilter=(event)=>{
-     setsearchvalue(event.target.value);
-    
     const newfilter=parseData?.filter((value)=>{
-      return value.name.toLowerCase().includes(searchvalue?.toLowerCase())
+      return value.name.toLowerCase().includes(event.target.value?.toLowerCase())
     }) 
-  //   if(searchvalue === ''){
-  //     setfilteredData([])
-  //  }
-  if(searchvalue.length-1===0){
-    setfilteredData([])
-  }
-   
-   else {setfilteredData(newfilter)}
-   
+    
+    if(event.target.value === ''){
+      setfilteredData([])
+   }
+   else{
+    setfilteredData(newfilter)
+   }
    }
    const handleOnCLick=()=>{
     setfilteredData([]);
