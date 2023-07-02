@@ -16,6 +16,9 @@
   background: #2C3E50 !important;
   border-radius: 20px !important;
 }
+#searchlist:hover{
+  background-color: #c7c6c6bd;
+}
 
 
 

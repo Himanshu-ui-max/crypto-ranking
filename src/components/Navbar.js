@@ -86,7 +86,7 @@ export default function Navbar() {
       </form>
 {filteredData?.length!==0 &&  (<div className="dataResult" style={{position : 'absolute',top : '50px', right : '0px'}} >
   {filteredData?.map((item)=>{
-    return  <p><Link to={`/coin/${item.id}`} onClick={handleOnCLick} >{item.name}</Link></p>
+    return  <p  onClick={handleOnCLick} id="searchlist"><Link to={`/coin/${item.id}`} style={{textDecoration:'none'}}><img src={item.image} alt="" style={{heigh:"23px", width:"23px"}} />{item.name}</Link></p>
   })}
 </div>)}
 </nav>
