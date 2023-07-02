@@ -27,14 +27,17 @@ export default function Navbar() {
      setsearchvalue(event.target.value);
     
     const newfilter=parseData?.filter((value)=>{
-      return value.name.toLowerCase().includes(searchvalue.toLowerCase())
+      return value.name.toLowerCase().includes(searchvalue?.toLowerCase())
     }) 
-    if(searchvalue === ''){
-      setfilteredData([])
-   }
-   else{
-    setfilteredData(newfilter)
-   }
+  //   if(searchvalue === ''){
+  //     setfilteredData([])
+  //  }
+  if(searchvalue.length-1===0){
+    setfilteredData([])
+  }
+   
+   else {setfilteredData(newfilter)}
+   
    }
    const handleOnCLick=()=>{
     setfilteredData([]);
