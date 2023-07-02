@@ -105,6 +105,7 @@ button.round:hover {
 
 @keyframes MoveUpDown {
   0%, 100% {
+    
     bottom: 0;
   }
   50% {
@@ -136,6 +137,22 @@ tr{
 @media screen and (max-width : 1344px) {
   #heading{
     font-size: 4rem !important;
+  }
+  .object {
+    animation: MoveUpDown 1.5s linear infinite;
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+  
+  @keyframes MoveUpDown {
+    0%, 100% {
+      
+      bottom: 0;
+    }
+    50% {
+      bottom: 50px;
+    }
   }
   #bitcoinimage{
     height: 200px !important;

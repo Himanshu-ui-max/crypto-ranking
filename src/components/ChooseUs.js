@@ -9,7 +9,7 @@ function ChooseUs() {
       <div className="container my-3">
         <h1 id='heading2' style={{fontSize: '7rem', marginBottom:'70px'}}>WHY <span id='choosegrad'>CHOOSE US</span></h1>
         <div id='chooseUs' style={{display : 'flex', justifyContent : 'space-evenly',color:'black'}}>
-            <div>
+            <div style={{marginBottom:"40px"}}>
 
             
         <div className="card my-3" style={{width: '18rem',zIndex : '-1'}}>
