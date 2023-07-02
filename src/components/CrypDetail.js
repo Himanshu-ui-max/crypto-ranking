@@ -28,19 +28,19 @@ export default function CrypDetail() {
   }, [coinId]);
   if (!loading) {
     return (
-      <><div className='container' id='Container' style={{ marginTop: "60px", display: 'flex', flexDirection: 'row', justifyContent: 'around', alignItems: 'center',color:'white'}}>
-        <div className="image" style={{ marginTop: '30px' }}>
-          {coin.image ? <img src={coin.image.large} alt={coin.id} id='detailimage' /> : null}
-          <h2 style={{ textTransform: "uppercase" }}><strong>{coin.name}({coin.symbol})</strong></h2>
-          <div className="p-2">Rank={coin.market_cap_rank}</div>
+      <><div className='container' id='Container' style={{ marginTop: "8%", display: 'flex', flexDirection: 'row', justifyContent:'center',color:'white'}}>
+        <div className="image" style={{ marginTop: '2.3%',width:'25%',display: 'flex', flexDirection: 'column', justifyContent:'space-evenly',alignItems:'center',gap:'0.7rem' }}>
+          {coin.image ? <img style={{height : '220px', width : '220px'}}src={coin.image.large} alt={coin.id} id='detailimage' /> : null}
+          <p style={{ textTransform: "uppercase",marginBottom:'0px',fontSize:'1.75rem'}}><strong>{coin.name}</strong>({coin.symbol})</p>
+          <p style={{fontSize:'1.4rem'}}>Rank: #{coin.market_cap_rank}</p>
         </div>
-        <div className="info" id="info" style={{ height: '320px', width: '800px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-          <div id="detailheading" style={{ display: 'flex', justifyContent: 'center' }}>
-            <div className="p-2">Current Price={coin.market_data ? "$" + numberWithCommas(coin.market_data.current_price.usd.toFixed(2)) : null}</div>
-            <div className="p-2">Market Cap={coin.market_data ? "$" + numberWithCommas(coin.market_data.market_cap.usd.toFixed(2)) : null}</div>
-            <div className="p-2">Price Change={coin.market_data ? coin.market_data.price_change_percentage_24h.toFixed(2) + "%" : ""}</div>
+        <div className="info" id="info" style={{ height: '340px', width: '800px', display: 'flex', flexDirection: 'column', justifyContent: 'center',marginTop: '2.3%' }}>
+          <div id="detailheading" style={{ display: 'flex', justifyContent: 'space-between',fontSize:'1.2rem' }}> 
+            <div className="p-2" >Current Price:{' '}<span style={{color:'#0ecb81'}}>{coin.market_data ?"$" + numberWithCommas(coin.market_data.current_price.usd.toFixed(2)) : ""}</span></div>
+            <div className="p-2" >Market Cap:{' '}<span style={{color:'#0ecb81'}}>{coin.market_data ?"$" + numberWithCommas(coin.market_data.market_cap.usd.toFixed(2)) : ""}</span></div>
+            <div className="p-2" >Price Change:{' '}<span style={{color:coin.market_data ? coin.market_data.price_change_percentage_24h.toFixed(2)>0?'#0ecb81':'#FF0000': ""}}>{coin.market_data ?coin.market_data.price_change_percentage_24h.toFixed(2) + "%" : ""}</span></div>
           </div>
-          <div className="description" id="description" style={{ height: '230px', width: '800px', overflow: 'auto', textAlign: 'left', padding: '30px' }}>
+          <div className="description" id="description" style={{ height: '300px', width: '800px', overflow: 'auto', textAlign: 'left', padding: '0px',fontSize:'1.2rem',marginTop:'30px' }}>
             <p style={{color:'white'}} dangerouslySetInnerHTML={{
               __html: DOMPurify.sanitize(
                 coin.description ? coin.description.en : ""

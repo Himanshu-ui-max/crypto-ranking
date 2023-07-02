@@ -167,8 +167,6 @@ tr{
   }
   #topcrypto{
     flex-direction: column !important;
-
-
   }
   #topimages{
     height: 100px !important;
@@ -254,11 +252,11 @@ body{
   background: rgba(15,57,100,1)  !important;
 }
 #navitems{
-  margin-left:20vw;
+  margin-left:15vw;
   gap:50px;
 }
 .navbar-brand{
-  margin-left:5vw;
+  margin-left:10vw;
   font-size: 1.75rem;
   text-transform: uppercase;
   color:'white' !important;
@@ -317,4 +315,10 @@ body{
 }
 .footergrad{
   font-size: 1.1rem !important;
+}
+tr:hover{
+  background-color: #1f2b5f !important;
+}
+#tableheading{
+  border-radius:8px 8px 0 0 !important;
 }
