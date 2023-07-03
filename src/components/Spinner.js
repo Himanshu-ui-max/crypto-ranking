@@ -3,7 +3,7 @@ import loading from './Gear.gif'
 
 export default function Spinner() {
   return (
-    <div>
+    <div id='loader'>
     <div style={{margin : ' 100px auto'}}>
       <div class="spinner-box">
         <div class="leo-border-1">

@@ -462,3 +462,6 @@ tr:hover{
           color: #181818 !important;
           background-color: #d6d6d6 !important;
         }
+        #loader{
+          z-index: -5;
+        }
