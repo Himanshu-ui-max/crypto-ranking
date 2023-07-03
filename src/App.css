@@ -442,9 +442,9 @@ tr:hover{
           width: 150px;
           height: 150px;
           padding: 3px;
-          display: flex;
+          /* display: flex;
           justify-content: center;
-          align-items: center;
+          align-items: center; */
           border-radius: 50%;
           background: rgb(251, 91, 83);
           background: linear-gradient(0deg, rgba(251, 91, 83, 0.1) 33%, rgba(251, 91, 83, 1) 100%);
