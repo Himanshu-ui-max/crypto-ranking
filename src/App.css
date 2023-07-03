@@ -446,8 +446,8 @@ tr:hover{
           justify-content: center;
           align-items: center; */
           border-radius: 50%;
-          background: rgb(251, 91, 83);
-          background: linear-gradient(0deg, rgba(251, 91, 83, 0.1) 33%, rgba(251, 91, 83, 1) 100%);
+          background: rgb(45, 113, 181);
+          background: linear-gradient(0deg, rgba(244, 238, 238, 0.536) 33%, rgba(45, 113, 181) 100%);
           animation: spin3D 2.2s linear 0s infinite;
         }
         
