@@ -272,11 +272,12 @@ body{
   background: rgba(15,57,100,1)  !important;
 }
 #navitems{
-  margin-left:15vw;
-  gap:50px;
+  margin-right: 15vw !important;
+  gap:1.5vw ;
 }
+
 .navbar-brand{
-  margin-left:10vw;
+  margin-left:7.5vw;
   font-size: 1.75rem;
   text-transform: uppercase;
   color:'white' !important;

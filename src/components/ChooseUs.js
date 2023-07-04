@@ -3,7 +3,7 @@ import illus from './illus.png'
 
 function ChooseUs() {
   return (
-    <section id='chooseus' style={{paddingTop : "150px"  }}>
+    <section id='chooseus' style={{paddingTop : "150px",marginTop:'130px' }}>
 
     <div>
       <div className="container my-3">

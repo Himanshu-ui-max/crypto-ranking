@@ -46,13 +46,13 @@ export default function Table() {
           <div >
 
 
-            {loading && (<div id='spinnner'><Spinner/></div>)}
+            {loading && <div id="spinner" style={{alignItems:'center',display:'flex',justifyContent:'space-around'}}><Spinner/></div>}
             {!loading && (<Tabledata parseData={parseData} />)}
 
 
           </div>
         </div>
-        <div className="container d-flex justify-content-evenly" style={{ marginTop: '20px', marginBottom: '200px' }} >
+        <div className="container d-flex justify-content-evenly" style={{ marginTop: '60px', marginBottom: '200px' }} >
           <button className="round" onClick={first}>1</button>
           <button className="round" onClick={second}>2</button>
           <button className="round" onClick={third}>3</button>
