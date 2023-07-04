@@ -470,3 +470,8 @@ tr:hover{
         #loader{
           z-index: -5;
         }
+
+
+        .me-2 {
+          margin-right: 0rem!important;
+      }
