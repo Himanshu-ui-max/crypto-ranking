@@ -38,12 +38,11 @@ export default function Table() {
     // eslint-disable-next-line
   }, []);
   return (
-    <section id='tablecoin' style={{ paddingTop: '45px', height: '125vh' }}>
+    <section id='tablecoin' style={{ paddingTop: '30px', height: '125vh' }}>
 
       <div>
         <div id='table'>
           <TableHeading />
-          <hr />
           <div >
 
 
@@ -53,7 +52,7 @@ export default function Table() {
 
           </div>
         </div>
-        <div className="container d-flex justify-content-evenly" style={{ marginTop: '50px', marginBottom: '200px' }} >
+        <div className="container d-flex justify-content-evenly" style={{ marginTop: '20px', marginBottom: '200px' }} >
           <button className="round" onClick={first}>1</button>
           <button className="round" onClick={second}>2</button>
           <button className="round" onClick={third}>3</button>

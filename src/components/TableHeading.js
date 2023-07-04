@@ -12,11 +12,8 @@ function TableHeading() {
       <th className='TabH' style={{ textAlign : 'right ', fontSize : '1.8rem', width : '300px'}}>1H Change</th>
       <th className='TabH' style={{ textAlign : 'right ', fontSize : '1.8rem',width : '300px'}}>MarketCap</th>
     </tr>
-
-    <hr />
   </tbody>
 </table>
-    
     </div>
   )
 }

@@ -24,13 +24,13 @@ export default function Homepage() {
 
     <div >
       <div className="container my-3" style={{ width : '98vw'}}>
-       <div style={{marginBottom: "50px"}}>
+       <div style={{marginBottom: "20px"}}>
         <h1 id='heading'  style={{ fontSize:"7.5rem", }}>Welcome to</h1>
         <h1 id='headingD'  style={{ fontSize:"7.5rem", }}>Crypto-Ranking !</h1>
        </div>
          
         <div className='container'>
-          <div className="container d-flex justify-content-around" style={{marginTop:'30px'}}>
+          <div className="container d-flex justify-content-around" style={{marginTop:'10px'}}>
 
           
           <div id='topcrypto'  style={{display : 'flex', justifyContent : 'space-evenly',gap:'50px',margin:'0px auto'} } >
