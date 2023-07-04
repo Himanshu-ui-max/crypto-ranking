@@ -46,7 +46,7 @@ export default function Table() {
           <div >
 
 
-            {loading && (<Spinner/>)}
+            {loading && (<div id='spinnner'><Spinner/></div>)}
             {!loading && (<Tabledata parseData={parseData} />)}
 
 
