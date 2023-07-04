@@ -14,7 +14,7 @@ export default function Tabledata(props) {
     <>
     
     <div id='tablediv'>
-      <table id='table' className="table table-borderless" style={{width: '76vw',margin: 'auto'}}>
+      <table  className="table table-borderless" style={{width: '76vw',margin: 'auto'}}>
   <tbody >
     {props.parseData.map((item)=>{
      return <Link to={`/coin/${item.id}`}  style={{textDecoration:"none", color:"black"}}>

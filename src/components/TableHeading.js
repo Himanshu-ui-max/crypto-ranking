@@ -2,7 +2,8 @@ import React from 'react'
 
 function TableHeading() {
   return (
-    <div id='headingdiv'  >
+    <div style={{paddingTop:"90px"}} id='market' >
+    <div id='table' >
       <p id='tabhead'style={{textAlign:'left',fontSize:'2.5rem',marginLeft:'11vw'}}>Market Update</p>
       <table id='tableheading' className="table table-borderless" style={{width: '76vw',margin: 'auto'}}>
   <tbody>
@@ -14,6 +15,7 @@ function TableHeading() {
     </tr>
   </tbody>
 </table>
+    </div>
     </div>
   )
 }
