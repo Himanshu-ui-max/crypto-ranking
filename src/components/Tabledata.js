@@ -27,13 +27,13 @@ export default function Tabledata(props) {
       <td className='TabD' style={{width : '300px',textAlign :'right'}}>{"$"+numberWithCommas(item.market_cap)}</td>
   
     </tr>
+<hr style={{padding:'0px', backgroundColor:'white',borderTop:'3px solid white' }} />
     </Link>
   </>)
   })}
   
   </tbody>
 </table>
-<hr style={{padding:'0px', backgroundColor:'white',borderTop:'3px solid white' }} />
     </div>
     
      
