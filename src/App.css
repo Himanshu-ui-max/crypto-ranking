@@ -165,7 +165,8 @@ tr{
     font-size: 4rem !important;
   }
   #tabhead{
-    font-size: 1.75rem !important;
+    font-size: 2.7rem !important;
+    margin-left: 0px !important;
   }
   #chooseUs{
     flex-direction: column !important;
@@ -180,35 +181,40 @@ tr{
   #table{
     overflow: hidden !important;
     overflow-x: auto !important;
-  }
-  #tableheading{
-    overflow: hidden !important;
-    overflow-x: auto !important ;
+    margin: auto 10vw !important;
   }
   #topcrypto{
     flex-direction: column !important;
+    gap: 0px !important;
   }
   #topimages{
-    height: 100px !important;
-    width: 100px !important;
+    height: 130px !important;
+    width: 130px !important;
   }
   #topname{
-    font-size: 1rem !important;
+    font-size: 1.3rem !important;
   }
   #topprices{
-    font-size: 1rem !important;
+    font-size: 1.3rem !important;
   }
   .TabH{
-    font-size: 1.2rem !important;
+    font-size: 1.5rem !important;
     width : 200px !important;
   }
   
   .TabD{
-    font-size: 1rem !important;
+    font-size: 1.3rem !important;
     width : 200px !important;
   }
-  
-  
+  #market{
+    padding-top: 90px !important ;
+  }
+  #homepage{
+    padding-top: 90px !important;
+  }
+  #tablecoin{
+    padding-top: 0px !important;
+  }
 
 }
 @media screen and (max-width : 1400px) {
@@ -259,18 +265,16 @@ tr{
     font-size: 6rem !important;
   }
   #chooseus{
-    padding-top: 0px !important ;
+    padding-top: 80px !important ;
   }
   #tablecoin{
     height: 120vh !important;
   }
   .navbar-brand{
-    margin-left:3.5vw !important;
+    margin-left:3vw !important;
     font-size: 1.7rem !important;
   }
-  /* #Containerr{
-    align-items: center !important;
-  } */
+ 
 }
 body{
   background-image: linear-gradient(180deg, rgba(15,57,100,1) 1%, rgba(0,0,0,1) 99%) !important;
