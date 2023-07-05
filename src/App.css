@@ -214,27 +214,34 @@ tr{
 @media screen and (max-width : 1400px) {
   #Container{
     flex-direction: column !important;
-    font-size: 1rem;
+    font-size: 1rem !important; 
+    align-items: center !important;
+    margin-top: 20% !important;
   }
+
 }
 @media screen and (max-width : 800px) {
   #detailimage{
-    height : 200px;
-    width : 200px;
+    height : 220px !important;
+    width : 220px !important;
   }
   #info{
-    width : 400px !important;
-    
+    width : 90vw !important;
+    height: 70vh !important;
   }
   #description{
-    width : 400px !important;
+    width : 80vw!important;
+    height: 80% !important;
+    margin:30px auto !important;
+  }
+  .image{
+    width: 80% !important;
   }
   #detailheading{
     flex-direction: column !important;
   }
   #chart{
-    width : 650px !important;
-    
+    width : 650px !important;  
   }
 }
 @media screen and (max-width : 992px) {
@@ -244,7 +251,6 @@ tr{
   }
   #navitems{
     margin-left:auto !important;
-    
   }
   #choosegrad{
     font-size: 6rem !important;
@@ -258,7 +264,13 @@ tr{
   #tablecoin{
     height: 120vh !important;
   }
-  
+  .navbar-brand{
+    margin-left:3.5vw !important;
+    font-size: 1.7rem !important;
+  }
+  /* #Containerr{
+    align-items: center !important;
+  } */
 }
 body{
   background-image: linear-gradient(180deg, rgba(15,57,100,1) 1%, rgba(0,0,0,1) 99%) !important;
@@ -270,10 +282,6 @@ body{
 }
 #navbarr{
   background: rgba(15,57,100,1)  !important;
-}
-#navitems{
-  margin-right: 15vw !important;
-  gap:1.5vw ;
 }
 
 .navbar-brand{

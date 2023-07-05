@@ -59,16 +59,13 @@ export default function Navbar() {
   return (
     <div >
       <nav id='navbarr'className="navbar navbar-expand-lg navbar-light bg-light fixed-top" style={{ zIndex : '1',width:'100vw',margin:'0px'}}>
-  <div className="container-fluid  d-flex justify-content-around" style={{color:'white',width:'100vw',margin:'0px'}}>
-  <div >
+  <div className="container-fluid" style={{color:'white',width:'100vw',margin:'0px'}}>
     <a className="navbar-brand" href="/#homepage"><strong>CryptoR</strong></a>
-    </div>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
-    <div className="collapse navbar-collapse d-flex justify-content-around" id="navbarSupportedContent">
-      <div  >
-      <ul id='navitems'className="navbar-nav me-auto mb-2 mb-lg-0" >
+    <div className="collapse navbar-collapse" id="navbarSupportedContent" >
+      <ul id='navitems'className="navbar-nav me-auto mb-2 mb-lg-0" style={{ marginLeft: '24vw', gap:'1.5vw' }}>
         <li className="nav-item" >
           <HashLink className={forHome} aria-current="page" to="/#homepage" onClick={handleHome}><strong>Home</strong></HashLink>
         </li>
@@ -79,15 +76,11 @@ export default function Navbar() {
           <HashLink className={forChooseUs} to="/#chooseus" onClick={handleChooseUS}><strong>Choose Us</strong></HashLink>
         </li>
       </ul>
-      </div>
     </div>
   </div>
-  <div>
   <form id='search' className="d-flex " style={{position : 'fixed', top : '14px',right:'6.5vw' , zIndex : '1', backgroundColor:"#d6d6d6"}}>
         <input className="form-control me-2 " type="search" placeholder="Search" aria-label="Search" onChange={handleFilter}/>
-      
       </form>
-      </div>
 {filteredData?.length!==0 &&  (<div className="dataResult" style={{position : 'absolute',top : '50px', right : '0px'}} >
   {filteredData?.map((item)=>{
     return  <div id="searchlist"><Link to={`/coin/${item.id}`} style={{textDecoration:'none'}} onClick={handleOnCLick} ><div style={{padding:"7px"}}><img src={item.image} alt="" style={{heigh:"23px", width:"23px"}} />{item.name}</div></Link></div>
