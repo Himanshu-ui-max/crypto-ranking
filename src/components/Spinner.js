@@ -1,5 +1,4 @@
 import React from 'react'
-import loading from './Gear.gif'
 
 export default function Spinner() {
   return (
