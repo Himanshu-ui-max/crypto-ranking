@@ -70,7 +70,7 @@ export default function Navbar() {
           <HashLink className={forHome} aria-current="page" to="/#homepage" onClick={handleHome}><strong>Home</strong></HashLink>
         </li>
         <li className="nav-item">
-          <HashLink className={forMarket} to="/#market" onClick={handleMarket}><strong>Market</strong></HashLink>
+          <HashLink className={forMarket} to="/#tablecoin" onClick={handleMarket}><strong>Market</strong></HashLink>
         </li>
         <li className="nav-item">
           <HashLink className={forChooseUs} to="/#chooseus" onClick={handleChooseUS}><strong>Choose Us</strong></HashLink>

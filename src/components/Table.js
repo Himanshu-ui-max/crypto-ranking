@@ -38,7 +38,7 @@ export default function Table() {
     // eslint-disable-next-line
   }, []);
   return (
-    <section id='tablecoin' style={{ paddingTop: '30px', height: '125vh' }}>
+    <section id='tablecoin' style={{ paddingTop: '90px', height: '125vh' }}>
 
       <div>
       <p id='tabhead'style={{textAlign:'left',fontSize:'2.5rem',marginLeft:'11vw'}}>Market Update</p>
