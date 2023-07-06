@@ -81,9 +81,9 @@ export default function Navbar() {
   <form id='search' className="d-flex " style={{position : 'fixed', top : '14px',right:'6.5vw' , zIndex : '1', backgroundColor:"#d6d6d6"}}>
         <input className="form-control me-2 " type="search" placeholder="Search" aria-label="Search" onChange={handleFilter}/>
       </form>
-{filteredData?.length!==0 &&  (<div className="dataResult" style={{position : 'absolute',top : '50px', right : '0px'}} >
+{filteredData?.length!==0 &&  (<div className="dataResult" style={{position : 'absolute',top : '50px', right : '0px',backgroundColor:"#2C3E50"}} >
   {filteredData?.map((item)=>{
-    return  <div id="searchlist"><Link to={`/coin/${item.id}`} style={{textDecoration:'none'}} onClick={handleOnCLick} ><div style={{padding:"7px"}}><img src={item.image} alt="" style={{heigh:"23px", width:"23px"}} />{item.name}</div></Link></div>
+    return  <div id="searchlist" ><Link to={`/coin/${item.id}`} style={{textDecoration:'none'}} onClick={handleOnCLick} ><div style={{padding:"7px"}}><img src={item.image} alt="" style={{heigh:"23px", width:"23px"}} />{item.name}</div></Link></div>
   })}
 </div>)}
 </nav>
