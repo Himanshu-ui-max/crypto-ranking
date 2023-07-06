@@ -130,7 +130,7 @@ tr{
 }
 .dataResult {
   margin-top: 5px;
-  width: 300px;
+  width: 21vw;
   /* height: 200px; */
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -477,8 +477,8 @@ tr:hover{
         } */
 
         .form-control{
-          color: #181818 !important;
-          background-color: #d6d6d6 !important;
+          color: #cfcfcf !important;
+          background-color: #2C3E50 !important;
         }
         #loader{
           z-index: -5;

@@ -78,8 +78,8 @@ export default function Navbar() {
       </ul>
     </div>
   </div>
-  <form id='search' className="d-flex " style={{position : 'fixed', top : '14px',right:'6.5vw' , zIndex : '1', backgroundColor:"#d6d6d6"}}>
-        <input className="form-control me-2 " type="search" placeholder="Search" aria-label="Search" onChange={handleFilter}/>
+  <form id='search' className="d-flex " style={{position : 'fixed', top : '14px',right:'6.5vw' , zIndex : '1', backgroundColor:"#2C3E50"}}>
+        <input className="form-control me-2 " style={{backgroundColor:"#2C3E50"}} type="search" placeholder="Search" aria-label="Search" onChange={handleFilter}/>
       </form>
 {filteredData?.length!==0 &&  (<div className="dataResult" style={{position : 'absolute',top : '50px', right : '0px',backgroundColor:"#2C3E50"}} >
   {filteredData?.map((item)=>{
