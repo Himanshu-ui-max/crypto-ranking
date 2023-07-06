@@ -29,8 +29,9 @@ export default function Tabledata(props) {
   
     </tr>
   </tbody>
+  <hr style={{width : '76vw',padding:'0px', backgroundColor:'white',borderTop:'3px solid white' }} />
 </table>
-<hr style={{width : '76vw',padding:'0px', backgroundColor:'white',borderTop:'3px solid white' }} />
+
     </Link>
   </>)
   })}
