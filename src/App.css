@@ -130,13 +130,14 @@ tr{
 }
 .dataResult {
   margin-top: 5px;
-  width: 21vw;
-  /* height: 200px; */
+  width: 220.8px;
+  margin-right: 6.5vw; 
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: hidden;
   overflow-y: auto;
 }
+
 @media screen and (max-width : 1344px) {
   #heading{
     font-size: 4rem !important;
