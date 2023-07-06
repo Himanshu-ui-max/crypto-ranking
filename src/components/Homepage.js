@@ -20,10 +20,10 @@ export default function Homepage() {
    cryptodata();
   }, []);
   return (
-    <section id='homepage' style={{paddingTop: '100px', width : '98vw'}}>
+    <section id='homepage' style={{paddingTop: '100px'}}>
 
     <div >
-      <div className="container my-3" style={{ width : '98vw'}}>
+      <div className="container my-3">
        <div style={{marginBottom: "20px"}}>
         <h1 id='heading'  style={{ fontSize:"7.5rem", }}>Welcome to</h1>
         <h1 id='headingD'  style={{ fontSize:"7.5rem", }}>Crypto-Ranking !</h1>

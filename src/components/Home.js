@@ -18,7 +18,7 @@ function Home() {
         <Table/>
         <ChooseUs/>
         <Footer/>
-      {/* <hr /> */}
+     
       
     </div>
   )

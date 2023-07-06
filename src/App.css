@@ -166,8 +166,8 @@ tr{
     font-size: 4rem !important;
   }
   #tabhead{
-    font-size: 2.7rem !important;
-    margin-left: 0px !important;
+    font-size: 2.3rem !important;
+    margin-left: 10vw !important;
   }
   #chooseUs{
     flex-direction: column !important;
@@ -189,27 +189,27 @@ tr{
     gap: 0px !important;
   }
   #topimages{
-    height: 130px !important;
-    width: 130px !important;
+    height: 120px !important;
+    width: 120px !important;
   }
   #topname{
-    font-size: 1.3rem !important;
+    font-size: 1.2rem !important;
   }
   #topprices{
-    font-size: 1.3rem !important;
+    font-size: 1.2rem !important;
   }
   .TabH{
-    font-size: 1.5rem !important;
+    font-size: 1.4rem !important;
     width : 200px !important;
   }
   
   .TabD{
-    font-size: 1.3rem !important;
+    font-size: 1.2rem !important;
     width : 200px !important;
   }
-  #market{
+  /* #market{
     padding-top: 90px !important ;
-  }
+  } */
   #homepage{
     padding-top: 90px !important;
   }
