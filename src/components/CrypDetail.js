@@ -26,14 +26,9 @@ export default function CrypDetail() {
     cryptodata();
     // eslint-disable-next-line
   }, [coinId]);
-  
+  if (!loading) {
     return (
-      <>
-      <div className='container' id='Container' style={{ marginTop: "8%", display: 'flex', flexDirection: 'row', justifyContent:'center',color:'white',padding:'0px'}}>
-        {loading && <div id="spinner" style={{alignItems:'center',display:'flex',justifyContent:'space-around'}}><Spinner/></div>}
-        
-
-          
+      <><div className='container' id='Container' style={{ marginTop: "8%", display: 'flex', flexDirection: 'row', justifyContent:'center',color:'white',padding:'0px'}}>
         <div className="image" style={{ marginTop: '2.3%',width:'25%',display: 'flex', flexDirection: 'column', justifyContent:'space-evenly',alignItems:'center',gap:'0.7rem' }}>
           {coin.image ? <img style={{height : '220px', width : '220px'}}src={coin.image.large} alt={coin.id} id='detailimage' /> : null}
           <p style={{ textTransform: "uppercase",marginBottom:'0px',fontSize:'1.75rem'}}><strong>{coin.name}</strong>({coin.symbol})</p>
@@ -60,7 +55,9 @@ export default function CrypDetail() {
       <Chart />
       </>
     )
-  
-  
+  }
+  else{
+    <Spinner/>
+  }
 }
 

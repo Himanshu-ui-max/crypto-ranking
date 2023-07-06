@@ -2,7 +2,6 @@ import React from 'react'
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import moment from 'moment';
-import Spinner from './Spinner';
 import {
   Chart as ChartJS,
   CategoryScale,
