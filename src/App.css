@@ -137,6 +137,10 @@ tr{
   overflow: hidden;
   overflow-y: auto;
 }
+.form-control{
+  border: none !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
 @media screen and (max-width : 1344px) {
   #heading{
@@ -360,6 +364,7 @@ tr:hover{
 #toplink:hover{
   background-color:  #24316e  !important;
   border-radius: 8px !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 
