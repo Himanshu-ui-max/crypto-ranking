@@ -78,12 +78,12 @@ export default function Navbar() {
       </ul>
     </div>
   </div>
-  <form id='search' className="d-flex " style={{position : 'fixed', top : '14px',right:'6.5vw' , zIndex : '1', backgroundColor:"#2C3E50"}}>
-        <input className="form-control me-2 " style={{backgroundColor:"#2C3E50"}} type="search" placeholder="Search" aria-label="Search" onChange={handleFilter}/>
+  <form id='search' className="d-flex " style={{position : 'fixed', top : '14px',right:'6.5vw' , zIndex : '1'}}>
+        <input className="form-control me-2 " type="search" placeholder="Search" aria-label="Search" onChange={handleFilter}/>
       </form>
-{filteredData?.length!==0 &&  (<div className="dataResult" style={{position : 'absolute',top : '50px',right:'0px',backgroundColor:"#2C3E50"}} >
+{filteredData?.length!==0 &&  (<div className="dataResult" style={{position : 'fixed',top : '50px',right:'0px',backgroundColor:"#2C3E50"}} >
   {filteredData?.map((item)=>{
-    return  <div id="searchlist" ><Link to={`/coin/${item.id}`} style={{textDecoration:'none'}} onClick={handleOnCLick} ><div style={{padding:"7px", textAlign:"left"}}><span style={{paddingLeft:"15px", color:"white"}}><img src={item.image} alt="" style={{heigh:"23px", width:"23px"}} /> {item.name}</span></div></Link></div>
+    return  <div id="searchlist" ><Link to={`/coin/${item.id}`} style={{textDecoration:'none'}} onClick={handleOnCLick} ><div style={{padding:"7px", textAlign:"left"}}><span style={{paddingLeft:"15px", color:"white"}}><img src={item.image} alt="" style={{height:"23px", width:"23px",marginRight:'10px'}} /> {item.name}</span></div></Link></div>
   })}
 </div>)}
 </nav>

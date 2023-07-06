@@ -16,6 +16,7 @@ export default function Tabledata(props) {
     
     <div id='tablediv'>
     {props.parseData.map((item)=>{
+      
       return (
         <>
       <Link to={`/coin/${item.id}`}  style={{textDecoration:"none", color:"black"}}>
@@ -29,11 +30,13 @@ export default function Tabledata(props) {
   
     </tr>
   </tbody>
-  <hr style={{width : '83vw',padding:'0px', backgroundColor:'white',borderTop:'3px solid white' }} />
+  <hr style={{padding:'0px', backgroundColor:'white',borderTop:'3px solid white' }} />
 </table>
 
     </Link>
-  </>)
+     </>
+   )
+  
   })}
   
     </div>
