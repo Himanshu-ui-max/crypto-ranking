@@ -46,6 +46,7 @@ export default function CrypDetail() {
             <div className="p-2" >Price Change:{' '}<span style={{color:coin.market_data ? coin.market_data.price_change_percentage_24h.toFixed(2)>0?'#0ecb81':'#FF0000': ""}}>{coin.market_data ?coin.market_data.price_change_percentage_24h.toFixed(2) + "%" : ""}</span></div>
           </div>
           <div className="description" id="description" style={{ height: '300px', width: '800px', overflow: 'auto', textAlign: 'left', padding: '0px',fontSize:'1.2rem',marginTop:'30px' }}>
+          {loading && <div id="spinner" style={{alignItems:'center',display:'flex',justifyContent:'space-around'}}><Spinner/></div>}
             <p style={{color:'white'}} dangerouslySetInnerHTML={{
               __html: DOMPurify.sanitize(
                 coin.description ? coin.description.en : ""
