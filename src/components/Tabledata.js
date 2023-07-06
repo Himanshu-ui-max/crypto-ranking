@@ -29,7 +29,7 @@ export default function Tabledata(props) {
   
     </tr>
   </tbody>
-  <hr style={{width : '76vw',padding:'0px', backgroundColor:'white',borderTop:'3px solid white' }} />
+  <hr style={{width : '83vw',padding:'0px', backgroundColor:'white',borderTop:'3px solid white' }} />
 </table>
 
     </Link>
