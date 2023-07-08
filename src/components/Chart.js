@@ -83,7 +83,6 @@ export default function HistoryChart  () {
   return (
     <>
     <div   >
-    {loading && <div id="spinner" style={{alignItems:'center',display:'flex',justifyContent:'space-around'}}><Spinner/></div>}
             <div className="btn-group  " role="group" aria-label="Default button group" style={{margin : '50px 0px'}}>
             <button type="button" className="btn btn-outline-success rounded mx-3" onClick={handle1D} >1 D</button>
             <button type="button" className="btn btn-outline-success rounded mx-3" onClick={handle1W}>1 W</button>
@@ -93,6 +92,7 @@ export default function HistoryChart  () {
             <div style={{overflow : 'auto'}}>
 
     <div id='chart' style={{margin : 'auto', overflow : 'hidden',width:'80%'}}>
+    {loading && <div id="spinner" style={{alignItems:'center',display:'flex',justifyContent:'space-around'}}><Spinner/></div>}
       <Line options={options} data={data} />
     </div>
             </div>
