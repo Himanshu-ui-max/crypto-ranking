@@ -79,7 +79,7 @@ export default function Navbar() {
     </div>
   </div>
   <form id='search' className="d-flex " style={{position : 'fixed', top : '14px',right:'6.5vw' , zIndex : '1'}}>
-        <input className="form-control me-2 " type="search" placeholder="Search" aria-label="Search" onChange={handleFilter}/>
+        <input  id='input' name='input' className="form-control me-2 " type="search" placeholder="Search" aria-label="Search" onChange={handleFilter}/>
       </form>
 {filteredData?.length!==0 &&  (<div className="dataResult" style={{position : 'fixed',top : '50px',right:'0px',backgroundColor:"#2C3E50"}} >
   {filteredData?.map((item)=>{

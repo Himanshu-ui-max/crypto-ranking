@@ -30,7 +30,6 @@ export default function Table() {
     let parsedata = await data.json();
     setloading(false);
     setparseData(parsedata);
-    console.log(parsedata);
   }
 
   useEffect(() => {

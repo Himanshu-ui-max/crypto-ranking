@@ -52,7 +52,7 @@ export default function CrypDetail() {
           </div>
         </div>
       </div>
-      <Chart />
+      <Chart key={coin.name} />
       </>
     )
            

@@ -56,7 +56,6 @@ export default function HistoryChart  () {
             let parsedata = await data.json();
             setloading(false);
             setChart(parsedata);
-            console.log(parsedata);
           }
           useEffect(() => {
             chartData('1');
