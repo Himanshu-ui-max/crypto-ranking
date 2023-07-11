@@ -60,7 +60,7 @@ export default function Navbar() {
     <div >
       <nav id='navbarr'className="navbar navbar-expand-lg navbar-light bg-light fixed-top" style={{ zIndex : '1',width:'100vw',margin:'0px'}}>
   <div className="container-fluid" style={{color:'white',width:'100vw',margin:'0px'}}>
-    <a className="navbar-brand" href="/#homepage"><strong>CryptoR</strong></a>
+    <HashLink className="navbar-brand" to="/#homepage"><strong>CryptoR</strong></HashLink>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
