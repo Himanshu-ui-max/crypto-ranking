@@ -84,7 +84,7 @@ export default function HistoryChart  () {
     <>
     <div   >
             <div className="btn-group  " role="group" aria-label="Default button group" style={{margin : '50px 0px',zIndex:'0'}}>
-            <button type="button" className="btn btn-outline-success rounded mx-3" onClick={handle1D} >1 D</button>
+            <button type="button" className="btn btn-outline-success rounded mx-3" onClick={handle1D}>1 D</button>
             <button type="button" className="btn btn-outline-success rounded mx-3" onClick={handle1W}>1 W</button>
             <button type="button" className="btn btn-outline-success rounded mx-3" onClick={handle1M}>1 M</button>
             <button type="button" className="btn btn-outline-success rounded mx-3" onClick={handle1Y}>1 Y</button>
